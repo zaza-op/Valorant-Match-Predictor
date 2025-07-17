@@ -1,0 +1,51 @@
+team_id,team_name,match_number,date,result,score,opponent,tournament,match_url
+8185,DRX,1,2025/07/10,L,0:2,Sentinels,EWC 2025,https://www.vlr.gg/510137/drx-vs-sentinels-esports-world-cup-2025-decider-b
+8185,DRX,2,2025/07/08,L,0:2,BBL Esports,EWC 2025,https://www.vlr.gg/510135/bbl-esports-vs-drx-esports-world-cup-2025-winners-b
+8185,DRX,3,2025/07/08,W,1:0,Xi Lai Gaming,EWC 2025,https://www.vlr.gg/510134/drx-vs-xi-lai-gaming-esports-world-cup-2025-opening-b
+8185,DRX,4,2025/05/25,L,1:3,Paper Rex,EWC 2025,https://www.vlr.gg/489436/paper-rex-vs-drx-esports-world-cup-2025-pacific-x-acl-qualifier-gf
+8185,DRX,5,2025/05/24,W,2:0,Global Esports,EWC 2025,https://www.vlr.gg/489435/drx-vs-global-esports-esports-world-cup-2025-pacific-x-acl-qualifier-sf
+8185,DRX,6,2025/05/23,W,1:0,Team Secret,EWC 2025,https://www.vlr.gg/489432/drx-vs-team-secret-esports-world-cup-2025-pacific-x-acl-qualifier-d2
+8185,DRX,7,2025/05/23,L,0:1,Nongshim RedForce,EWC 2025,https://www.vlr.gg/489430/drx-vs-nongshim-redforce-esports-world-cup-2025-pacific-x-acl-qualifier-d2
+8185,DRX,8,2025/05/23,W,1:0,BOOM Esports,EWC 2025,https://www.vlr.gg/489428/drx-vs-boom-esports-esports-world-cup-2025-pacific-x-acl-qualifier-d2
+8185,DRX,9,2025/05/18,W,3:1,Paper Rex,HERO ESPORTS ACL 25,https://www.vlr.gg/481652/paper-rex-vs-drx-hero-esports-asian-champions-league-2025-gf
+8185,DRX,10,2025/05/16,W,2:1,Xi Lai Gaming,HERO ESPORTS ACL 25,https://www.vlr.gg/481657/xi-lai-gaming-vs-drx-hero-esports-asian-champions-league-2025-lbf
+8185,DRX,11,2025/05/16,W,2:0,Bilibili Gaming,HERO ESPORTS ACL 25,https://www.vlr.gg/481656/drx-vs-bilibili-gaming-hero-esports-asian-champions-league-2025-lr3
+8185,DRX,12,2025/05/14,W,2:0,Bilibili Gaming,HERO ESPORTS ACL 25,https://www.vlr.gg/481654/bilibili-gaming-vs-drx-hero-esports-asian-champions-league-2025-lr2
+8185,DRX,13,2025/05/09,L,0:2,Paper Rex,VCT 25: PAC Stage 1,https://www.vlr.gg/473842/drx-vs-paper-rex-champions-tour-2025-pacific-stage-1-lr3
+8185,DRX,14,2025/05/04,W,2:0,TALON,VCT 25: PAC Stage 1,https://www.vlr.gg/473839/drx-vs-talon-champions-tour-2025-pacific-stage-1-lr2
+8185,DRX,15,2025/04/27,L,1:2,Rex Regum Qeon,VCT 25: PAC Stage 1,https://www.vlr.gg/473838/rex-regum-qeon-vs-drx-champions-tour-2025-pacific-stage-1-ubsf
+8185,DRX,16,2025/04/26,W,2:0,T1,VCT 25: PAC Stage 1,https://www.vlr.gg/473834/drx-vs-t1-champions-tour-2025-pacific-stage-1-ur1
+8185,DRX,17,2025/04/20,W,2:1,Gen.G,VCT 25: PAC Stage 1,https://www.vlr.gg/458832/drx-vs-gen-g-champions-tour-2025-pacific-stage-1-w5
+8185,DRX,18,2025/04/12,L,1:2,BOOM Esports,VCT 25: PAC Stage 1,https://www.vlr.gg/458824/drx-vs-boom-esports-champions-tour-2025-pacific-stage-1-w4
+8185,DRX,19,2025/04/07,W,2:0,Global Esports,VCT 25: PAC Stage 1,https://www.vlr.gg/458821/drx-vs-global-esports-champions-tour-2025-pacific-stage-1-w3
+8185,DRX,20,2025/03/30,W,2:0,DetonatioN FocusMe,VCT 25: PAC Stage 1,https://www.vlr.gg/458814/drx-vs-detonation-focusme-champions-tour-2025-pacific-stage-1-w2
+8185,DRX,21,2025/03/23,W,2:1,Paper Rex,VCT 25: PAC Stage 1,https://www.vlr.gg/458807/drx-vs-paper-rex-champions-tour-2025-pacific-stage-1-w1
+8185,DRX,22,2025/02/24,L,0:2,T1,Masters Bangkok 2025,https://www.vlr.gg/449004/t1-vs-drx-champions-tour-2025-masters-bangkok-r3
+8185,DRX,23,2025/02/22,L,1:2,Team Vitality,Masters Bangkok 2025,https://www.vlr.gg/449000/drx-vs-team-vitality-champions-tour-2025-masters-bangkok-r2-1-0
+8185,DRX,24,2025/02/20,W,2:0,Sentinels,Masters Bangkok 2025,https://www.vlr.gg/448600/drx-vs-sentinels-champions-tour-2025-masters-bangkok-r1
+8185,DRX,25,2025/02/09,W,3:2,T1,VCT 25: PAC Kickoff,https://www.vlr.gg/430525/drx-vs-t1-champions-tour-2025-pacific-kickoff-gf
+8185,DRX,26,2025/02/07,W,2:1,T1,VCT 25: PAC Kickoff,https://www.vlr.gg/430524/t1-vs-drx-champions-tour-2025-pacific-kickoff-ubf
+8185,DRX,27,2025/01/31,W,2:0,Gen.G,VCT 25: PAC Kickoff,https://www.vlr.gg/430523/gen-g-vs-drx-champions-tour-2025-pacific-kickoff-ubsf
+8185,DRX,28,2025/01/20,W,2:1,Nongshim RedForce,VCT 25: PAC Kickoff,https://www.vlr.gg/430521/drx-vs-nongshim-redforce-champions-tour-2025-pacific-kickoff-ubqf
+8185,DRX,29,2024/12/14,L,0:2,Gen.G,SOOP League,https://www.vlr.gg/425354/drx-vs-gen-g-soop-valorant-league-sf
+8185,DRX,30,2024/12/13,W,2:0,Rapid Lofi,SOOP League,https://www.vlr.gg/425342/rapid-lofi-vs-drx-soop-valorant-league-winners-b
+8185,DRX,31,2024/12/11,W,2:1,Bilibili Gaming,SOOP League,https://www.vlr.gg/425341/drx-vs-bilibili-gaming-soop-valorant-league-opening-b
+8185,DRX,32,2024/11/29,L,0:2,Trace Esports,Radiant Asia Invitational,https://www.vlr.gg/418818/trace-esports-vs-drx-valorant-radiant-asia-invitational-lr1
+8185,DRX,33,2024/11/28,L,1:2,Paper Rex,Radiant Asia Invitational,https://www.vlr.gg/418815/drx-vs-paper-rex-valorant-radiant-asia-invitational-ubsf
+8185,DRX,34,2024/11/23,W,2:1,Gen.G,Radiant Asia Invitational,https://www.vlr.gg/418808/gen-g-vs-drx-valorant-radiant-asia-invitational-r2-1-0
+8185,DRX,35,2024/11/22,W,2:0,Bilibili Gaming,Radiant Asia Invitational,https://www.vlr.gg/418806/drx-vs-bilibili-gaming-valorant-radiant-asia-invitational-r1
+8185,DRX,36,2024/10/27,L,0:2,TALON,TEN Asia Invitational,https://www.vlr.gg/415859/talon-esports-vs-drx-ten-valorant-asia-invitational-sf
+8185,DRX,37,2024/10/27,W,1:0,FunPlus Phoenix,TEN Asia Invitational,https://www.vlr.gg/415858/drx-vs-funplus-phoenix-ten-valorant-asia-invitational-qf
+8185,DRX,38,2024/10/26,W,1:0,Gen.G,TEN Asia Invitational,https://www.vlr.gg/415856/gen-g-vs-drx-ten-valorant-asia-invitational-rr
+8185,DRX,39,2024/10/26,L,0:1,TALON,TEN Asia Invitational,https://www.vlr.gg/415854/drx-vs-talon-esports-ten-valorant-asia-invitational-rr
+8185,DRX,40,2024/10/26,W,1:0,FunPlus Phoenix,TEN Asia Invitational,https://www.vlr.gg/415853/drx-vs-funplus-phoenix-ten-valorant-asia-invitational-rr
+8185,DRX,41,2024/08/18,L,1:2,Team Heretics,VCT 2024: Champions,https://www.vlr.gg/378833/team-heretics-vs-drx-valorant-champions-2024-lr2
+8185,DRX,42,2024/08/16,W,2:0,Trace Esports,VCT 2024: Champions,https://www.vlr.gg/378831/drx-vs-trace-esports-valorant-champions-2024-lr1
+8185,DRX,43,2024/08/14,L,0:2,Sentinels,VCT 2024: Champions,https://www.vlr.gg/378822/drx-vs-sentinels-valorant-champions-2024-ubqf
+8185,DRX,44,2024/08/06,W,2:0,FNATIC,VCT 2024: Champions,https://www.vlr.gg/378658/fnatic-vs-drx-valorant-champions-2024-winners-a
+8185,DRX,45,2024/08/02,W,2:1,KRÜ Esports,VCT 2024: Champions,https://www.vlr.gg/378657/drx-vs-kr-esports-valorant-champions-2024-opening-a
+8185,DRX,46,2024/07/21,L,1:3,Gen.G,VCT 24: PAC Stage 2,https://www.vlr.gg/365321/gen-g-vs-drx-champions-tour-2024-pacific-stage-2-gf
+8185,DRX,47,2024/07/20,W,3:2,Paper Rex,VCT 24: PAC Stage 2,https://www.vlr.gg/365323/drx-vs-paper-rex-champions-tour-2024-pacific-stage-2-lf
+8185,DRX,48,2024/07/14,L,1:2,Gen.G,VCT 24: PAC Stage 2,https://www.vlr.gg/365320/gen-g-vs-drx-champions-tour-2024-pacific-stage-2-ubf
+8185,DRX,49,2024/07/13,W,2:0,TALON,VCT 24: PAC Stage 2,https://www.vlr.gg/365319/drx-vs-talon-esports-champions-tour-2024-pacific-stage-2-ubsf
+8185,DRX,50,2024/07/06,W,2:1,DetonatioN FocusMe,VCT 24: PAC Stage 2,https://www.vlr.gg/314360/drx-vs-detonation-focusme-champions-tour-2024-pacific-stage-2-w4

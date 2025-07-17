@@ -1,0 +1,51 @@
+team_id,team_name,match_number,date,result,score,opponent,tournament,match_url
+8304,TALON,1,2025/05/22,L,0:1,T1,EWC 2025,https://www.vlr.gg/489427/talon-vs-t1-esports-world-cup-2025-pacific-x-acl-qualifier-d1
+8304,TALON,2,2025/05/22,L,0:1,Global Esports,EWC 2025,https://www.vlr.gg/489425/talon-vs-global-esports-esports-world-cup-2025-pacific-x-acl-qualifier-d1
+8304,TALON,3,2025/05/22,L,0:1,Paper Rex,EWC 2025,https://www.vlr.gg/489422/paper-rex-vs-talon-esports-world-cup-2025-pacific-x-acl-qualifier-d1
+8304,TALON,4,2025/05/04,L,0:2,DRX,VCT 25: PAC Stage 1,https://www.vlr.gg/473839/drx-vs-talon-champions-tour-2025-pacific-stage-1-lr2
+8304,TALON,5,2025/05/03,W,2:1,Nongshim RedForce,VCT 25: PAC Stage 1,https://www.vlr.gg/473835/talon-vs-nongshim-redforce-champions-tour-2025-pacific-stage-1-lr1
+8304,TALON,6,2025/04/26,L,1:2,Gen.G,VCT 25: PAC Stage 1,https://www.vlr.gg/473833/talon-vs-gen-g-champions-tour-2025-pacific-stage-1-ur1
+8304,TALON,7,2025/04/19,W,2:0,T1,VCT 25: PAC Stage 1,https://www.vlr.gg/458831/t1-vs-talon-champions-tour-2025-pacific-stage-1-w5
+8304,TALON,8,2025/04/14,L,0:2,ZETA DIVISION,VCT 25: PAC Stage 1,https://www.vlr.gg/458827/talon-vs-zeta-division-champions-tour-2025-pacific-stage-1-w4
+8304,TALON,9,2025/04/06,W,2:1,Nongshim RedForce,VCT 25: PAC Stage 1,https://www.vlr.gg/458820/talon-vs-nongshim-redforce-champions-tour-2025-pacific-stage-1-w3
+8304,TALON,10,2025/03/31,L,0:2,Rex Regum Qeon,VCT 25: PAC Stage 1,https://www.vlr.gg/458815/talon-vs-rex-regum-qeon-champions-tour-2025-pacific-stage-1-w2
+8304,TALON,11,2025/03/23,W,2:1,Team Secret,VCT 25: PAC Stage 1,https://www.vlr.gg/458808/talon-vs-team-secret-champions-tour-2025-pacific-stage-1-w1
+8304,TALON,12,2025/02/07,L,0:2,Gen.G,VCT 25: PAC Kickoff,https://www.vlr.gg/430534/talon-vs-gen-g-champions-tour-2025-pacific-kickoff-lr4
+8304,TALON,13,2025/02/02,W,2:1,Nongshim RedForce,VCT 25: PAC Kickoff,https://www.vlr.gg/430532/talon-vs-nongshim-redforce-champions-tour-2025-pacific-kickoff-lr3
+8304,TALON,14,2025/01/31,L,1:2,T1,VCT 25: PAC Kickoff,https://www.vlr.gg/430522/t1-vs-talon-champions-tour-2025-pacific-kickoff-ubsf
+8304,TALON,15,2025/01/25,W,2:1,Global Esports,VCT 25: PAC Kickoff,https://www.vlr.gg/430519/talon-vs-global-esports-champions-tour-2025-pacific-kickoff-ubqf
+8304,TALON,16,2024/12/12,L,0:2,Gen.G,SOOP League,https://www.vlr.gg/425338/gen-g-vs-talon-soop-valorant-league-elim-a
+8304,TALON,17,2024/12/10,L,1:2,Made in Thailand,SOOP League,https://www.vlr.gg/425336/made-in-thailand-vs-talon-soop-valorant-league-opening-a
+8304,TALON,18,2024/10/27,L,1:2,Gen.G,TEN Asia Invitational,https://www.vlr.gg/415860/gen-g-vs-talon-esports-ten-valorant-asia-invitational-gf
+8304,TALON,19,2024/10/27,W,2:0,DRX,TEN Asia Invitational,https://www.vlr.gg/415859/talon-esports-vs-drx-ten-valorant-asia-invitational-sf
+8304,TALON,20,2024/10/26,W,1:0,FunPlus Phoenix,TEN Asia Invitational,https://www.vlr.gg/415857/talon-esports-vs-funplus-phoenix-ten-valorant-asia-invitational-rr
+8304,TALON,21,2024/10/26,L,0:1,Gen.G,TEN Asia Invitational,https://www.vlr.gg/415855/gen-g-vs-talon-esports-ten-valorant-asia-invitational-rr
+8304,TALON,22,2024/10/26,W,1:0,DRX,TEN Asia Invitational,https://www.vlr.gg/415854/drx-vs-talon-esports-ten-valorant-asia-invitational-rr
+8304,TALON,23,2024/10/19,L,0:1,DetonatioN FocusMe,Red Bull HG #5,https://www.vlr.gg/414232/talon-esports-vs-detonation-focusme-red-bull-home-ground-5-g1
+8304,TALON,24,2024/10/19,W,1:0,Rex Regum Qeon,Red Bull HG #5,https://www.vlr.gg/414231/talon-esports-vs-rex-regum-qeon-red-bull-home-ground-5-g1
+8304,TALON,25,2024/08/09,L,0:2,Team Vitality,VCT 2024: Champions,https://www.vlr.gg/378671/talon-esports-vs-team-vitality-valorant-champions-2024-elim-c
+8304,TALON,26,2024/08/03,L,0:2,LEVIATÁN,VCT 2024: Champions,https://www.vlr.gg/378667/leviat-n-vs-talon-esports-valorant-champions-2024-opening-c
+8304,TALON,27,2024/07/14,L,0:2,Paper Rex,VCT 24: PAC Stage 2,https://www.vlr.gg/365322/paper-rex-vs-talon-esports-champions-tour-2024-pacific-stage-2-lr1
+8304,TALON,28,2024/07/13,L,0:2,DRX,VCT 24: PAC Stage 2,https://www.vlr.gg/365319/drx-vs-talon-esports-champions-tour-2024-pacific-stage-2-ubsf
+8304,TALON,29,2024/07/12,W,2:0,Team Secret,VCT 24: PAC Stage 2,https://www.vlr.gg/365317/team-secret-vs-talon-esports-champions-tour-2024-pacific-stage-2-ko
+8304,TALON,30,2024/07/06,L,1:2,ZETA DIVISION,VCT 24: PAC Stage 2,https://www.vlr.gg/314361/zeta-division-vs-talon-esports-champions-tour-2024-pacific-stage-2-w4
+8304,TALON,31,2024/07/01,L,1:2,DRX,VCT 24: PAC Stage 2,https://www.vlr.gg/314357/drx-vs-talon-esports-champions-tour-2024-pacific-stage-2-w3
+8304,TALON,32,2024/06/29,W,2:0,DetonatioN FocusMe,VCT 24: PAC Stage 2,https://www.vlr.gg/314352/talon-esports-vs-detonation-focusme-champions-tour-2024-pacific-stage-2-w3
+8304,TALON,33,2024/06/22,W,2:1,Rex Regum Qeon,VCT 24: PAC Stage 2,https://www.vlr.gg/314346/talon-esports-vs-rex-regum-qeon-champions-tour-2024-pacific-stage-2-w2
+8304,TALON,34,2024/06/16,L,0:2,Paper Rex,VCT 24: PAC Stage 2,https://www.vlr.gg/314343/paper-rex-vs-talon-esports-champions-tour-2024-pacific-stage-2-w1
+8304,TALON,35,2024/05/03,L,1:2,Paper Rex,VCT 24: PAC Stage 1,https://www.vlr.gg/329908/paper-rex-vs-talon-esports-champions-tour-2024-pacific-stage-1-ko
+8304,TALON,36,2024/04/28,W,2:1,Team Secret,VCT 24: PAC Stage 1,https://www.vlr.gg/314328/team-secret-vs-talon-esports-champions-tour-2024-pacific-stage-1-w4
+8304,TALON,37,2024/04/22,W,2:0,T1,VCT 24: PAC Stage 1,https://www.vlr.gg/314321/t1-vs-talon-esports-champions-tour-2024-pacific-stage-1-w3
+8304,TALON,38,2024/04/15,W,2:1,Global Esports,VCT 24: PAC Stage 1,https://www.vlr.gg/314314/global-esports-vs-talon-esports-champions-tour-2024-pacific-stage-1-w2
+8304,TALON,39,2024/04/09,L,0:2,Gen.G,VCT 24: PAC Stage 1,https://www.vlr.gg/314307/gen-g-vs-talon-esports-champions-tour-2024-pacific-stage-1-w1
+8304,TALON,40,2024/04/07,W,2:1,BLEED,VCT 24: PAC Stage 1,https://www.vlr.gg/314303/bleed-vs-talon-esports-champions-tour-2024-pacific-stage-1-w1
+8304,TALON,41,2024/02/21,L,0:2,Team Secret,VCT 24: PAC Kickoff,https://www.vlr.gg/296734/talon-esports-vs-team-secret-champions-tour-2024-pacific-kickoff-decider-b
+8304,TALON,42,2024/02/20,L,0:2,DRX,VCT 24: PAC Kickoff,https://www.vlr.gg/296732/drx-vs-talon-esports-champions-tour-2024-pacific-kickoff-winners-b
+8304,TALON,43,2024/02/18,W,2:0,Team Secret,VCT 24: PAC Kickoff,https://www.vlr.gg/296731/team-secret-vs-talon-esports-champions-tour-2024-pacific-kickoff-opening-b
+8304,TALON,44,2023/11/26,L,0:2,Team NKT,Clash of Nations '23,https://www.vlr.gg/284658/team-nkt-vs-talon-esports-esl-clash-of-nations-2023-gf
+8304,TALON,45,2023/11/26,W,2:1,FULL SENSE,Clash of Nations '23,https://www.vlr.gg/284660/full-sense-vs-talon-esports-esl-clash-of-nations-2023-lf
+8304,TALON,46,2023/11/25,W,2:1,Oasis Gaming,Clash of Nations '23,https://www.vlr.gg/284659/oasis-gaming-vs-talon-esports-esl-clash-of-nations-2023-lr1
+8304,TALON,47,2023/11/24,L,1:2,FULL SENSE,Clash of Nations '23,https://www.vlr.gg/284656/full-sense-vs-talon-esports-esl-clash-of-nations-2023-ubsf
+8304,TALON,48,2023/07/19,L,1:2,Gen.G,VCT 2023: Pacific LCQ,https://www.vlr.gg/237268/gen-g-vs-talon-esports-champions-tour-2023-pacific-last-chance-qualifier-ubqf
+8304,TALON,49,2023/07/18,W,2:0,DetonatioN FocusMe,VCT 2023: Pacific LCQ,https://www.vlr.gg/237266/talon-esports-vs-detonation-focusme-champions-tour-2023-pacific-last-chance-qualifier-ur1
+8304,TALON,50,2023/05/16,W,2:0,DetonatioN FocusMe,VCT 2023: Pacific,https://www.vlr.gg/184501/talon-esports-vs-detonation-focusme-champions-tour-2023-pacific-league-w8

@@ -1,0 +1,51 @@
+team_id,team_name,match_number,date,result,score,opponent,tournament,match_url
+1184,FUT Esports,1,2025/05/24,L,0:2,Karmine Corp,EWC 2025,https://www.vlr.gg/488001/fut-esports-vs-karmine-corp-esports-world-cup-2025-elim-p2
+1184,FUT Esports,2,2025/05/23,L,0:2,Team Liquid,EWC 2025,https://www.vlr.gg/487998/team-liquid-vs-fut-esports-esports-world-cup-2025-opening-p2
+1184,FUT Esports,3,2025/05/20,W,2:0,Natus Vincere,EWC 2025,https://www.vlr.gg/487997/fut-esports-vs-natus-vincere-esports-world-cup-2025-lbf
+1184,FUT Esports,4,2025/05/18,L,1:2,Karmine Corp,EWC 2025,https://www.vlr.gg/487991/fut-esports-vs-karmine-corp-esports-world-cup-2025-ubf
+1184,FUT Esports,5,2025/05/17,W,2:0,Team Vitality,EWC 2025,https://www.vlr.gg/487989/fut-esports-vs-team-vitality-esports-world-cup-2025-ubsf
+1184,FUT Esports,6,2025/05/16,W,2:0,Apeks,EWC 2025,https://www.vlr.gg/487985/fut-esports-vs-apeks-esports-world-cup-2025-ubqf
+1184,FUT Esports,7,2025/05/11,L,1:2,BBL Esports,VCT 25: EMEA Stage 1,https://www.vlr.gg/482510/bbl-esports-vs-fut-esports-champions-tour-2025-emea-stage-1-playoffs-lr2
+1184,FUT Esports,8,2025/05/09,W,2:0,Team Vitality,VCT 25: EMEA Stage 1,https://www.vlr.gg/482506/fut-esports-vs-team-vitality-champions-tour-2025-emea-stage-1-playoffs-lr1
+1184,FUT Esports,9,2025/05/08,L,0:2,FNATIC,VCT 25: EMEA Stage 1,https://www.vlr.gg/482504/fnatic-vs-fut-esports-champions-tour-2025-emea-stage-1-playoffs-ubr1
+1184,FUT Esports,10,2025/04/23,L,0:2,BBL Esports,VCT 25: EMEA Stage 1,https://www.vlr.gg/459852/bbl-esports-vs-fut-esports-champions-tour-2025-emea-stage-1-w5
+1184,FUT Esports,11,2025/04/18,W,2:1,Karmine Corp,VCT 25: EMEA Stage 1,https://www.vlr.gg/459849/karmine-corp-vs-fut-esports-champions-tour-2025-emea-stage-1-w4
+1184,FUT Esports,12,2025/04/10,L,0:2,Team Liquid,VCT 25: EMEA Stage 1,https://www.vlr.gg/459841/team-liquid-vs-fut-esports-champions-tour-2025-emea-stage-1-w3
+1184,FUT Esports,13,2025/04/03,W,2:1,Gentle Mates,VCT 25: EMEA Stage 1,https://www.vlr.gg/459834/fut-esports-vs-gentle-mates-champions-tour-2025-emea-stage-1-w2
+1184,FUT Esports,14,2025/03/27,W,2:0,KOI,VCT 25: EMEA Stage 1,https://www.vlr.gg/459829/fut-esports-vs-koi-champions-tour-2025-emea-stage-1-w1
+1184,FUT Esports,15,2025/02/07,L,1:2,Team Liquid,VCT 25: EMEA Kickoff,https://www.vlr.gg/429400/fut-esports-vs-team-liquid-champions-tour-2025-emea-kickoff-lr4
+1184,FUT Esports,16,2025/01/31,W,2:0,FNATIC,VCT 25: EMEA Kickoff,https://www.vlr.gg/429397/fut-esports-vs-fnatic-champions-tour-2025-emea-kickoff-lr3
+1184,FUT Esports,17,2025/01/29,L,0:2,Team Vitality,VCT 25: EMEA Kickoff,https://www.vlr.gg/429387/fut-esports-vs-team-vitality-champions-tour-2025-emea-kickoff-ubsf
+1184,FUT Esports,18,2025/01/22,W,2:0,Team Liquid,VCT 25: EMEA Kickoff,https://www.vlr.gg/429383/fut-esports-vs-team-liquid-champions-tour-2025-emea-kickoff-ubqf
+1184,FUT Esports,19,2024/11/23,L,1:2,T1,Red Bull HG #5,https://www.vlr.gg/424006/t1-vs-fut-esports-red-bull-home-ground-5-sf
+1184,FUT Esports,20,2024/11/22,L,8:40,FFW,Unknown,https://www.vlr.gg/424021/team-heretics-vs-fut-esports-red-bull-home-ground-5-r3
+1184,FUT Esports,21,2024/11/21,W,1:0,Karmine Corp,Red Bull HG #5,https://www.vlr.gg/423975/fut-esports-vs-karmine-corp-red-bull-home-ground-5-r2
+1184,FUT Esports,22,2024/11/21,L,0:1,T1,Red Bull HG #5,https://www.vlr.gg/423623/fut-esports-vs-t1-red-bull-home-ground-5-r1
+1184,FUT Esports,23,2024/11/20,W,1:0,G2 Esports,Red Bull HG #5,https://www.vlr.gg/421599/g2-esports-vs-fut-esports-red-bull-home-ground-5-ubf
+1184,FUT Esports,24,2024/11/20,W,1:0,Permitta Unicorns,Red Bull HG #5,https://www.vlr.gg/421598/permitta-unicorns-vs-fut-esports-red-bull-home-ground-5-ubsf
+1184,FUT Esports,25,2024/11/20,W,1:0,Zen eSports,Red Bull HG #5,https://www.vlr.gg/421596/zen-esports-vs-fut-esports-red-bull-home-ground-5-ubqf
+1184,FUT Esports,26,2024/10/27,W,3:2,BBL PCIFIC,Red Bull HG #5 Qualifiers,https://www.vlr.gg/415801/bbl-pcific-vs-fut-esports-red-bull-home-ground-5-gf
+1184,FUT Esports,27,2024/10/26,W,2:0,Galatasaray Esports,Red Bull HG #5 Qualifiers,https://www.vlr.gg/415800/fut-esports-vs-galatasaray-esports-red-bull-home-ground-5-sf
+1184,FUT Esports,28,2024/10/20,W,1:0,Eternal Fire,Red Bull HG #5 Qualifiers,https://www.vlr.gg/415564/fut-esports-vs-eternal-fire-red-bull-home-ground-5-te
+1184,FUT Esports,29,2024/10/20,W,1:0,Galakticos,Red Bull HG #5 Qualifiers,https://www.vlr.gg/414542/fut-esports-vs-galakticos-red-bull-home-ground-5-d2
+1184,FUT Esports,30,2024/10/19,L,0:1,Eternal Fire,Red Bull HG #5 Qualifiers,https://www.vlr.gg/414535/fut-esports-vs-eternal-fire-red-bull-home-ground-5-d1
+1184,FUT Esports,31,2024/10/19,W,1:0,Digital Athletics,Red Bull HG #5 Qualifiers,https://www.vlr.gg/414529/digital-athletics-vs-fut-esports-red-bull-home-ground-5-d1
+1184,FUT Esports,32,2024/10/19,W,1:0,Papara SuperMassive,Red Bull HG #5 Qualifiers,https://www.vlr.gg/414525/fut-esports-vs-papara-supermassive-red-bull-home-ground-5-d1
+1184,FUT Esports,33,2024/08/09,L,0:2,Paper Rex,VCT 2024: Champions,https://www.vlr.gg/378676/fut-esports-vs-paper-rex-valorant-champions-2024-elim-d
+1184,FUT Esports,34,2024/08/04,L,0:2,EDward Gaming,VCT 2024: Champions,https://www.vlr.gg/378673/edward-gaming-vs-fut-esports-valorant-champions-2024-opening-d
+1184,FUT Esports,35,2024/07/17,L,0:2,Team Heretics,VCT 24: EMEA Stage 2,https://www.vlr.gg/371284/team-heretics-vs-fut-esports-champions-tour-2024-emea-stage-2-lr1
+1184,FUT Esports,36,2024/07/16,L,0:2,FNATIC,VCT 24: EMEA Stage 2,https://www.vlr.gg/371281/fut-esports-vs-fnatic-champions-tour-2024-emea-stage-2-ubsf
+1184,FUT Esports,37,2024/07/09,W,2:0,GIANTX,VCT 24: EMEA Stage 2,https://www.vlr.gg/353172/fut-esports-vs-giantx-champions-tour-2024-emea-stage-2-w4
+1184,FUT Esports,38,2024/07/03,W,2:0,Gentle Mates,VCT 24: EMEA Stage 2,https://www.vlr.gg/353167/fut-esports-vs-gentle-mates-champions-tour-2024-emea-stage-2-w3
+1184,FUT Esports,39,2024/06/26,L,0:2,Team Heretics,VCT 24: EMEA Stage 2,https://www.vlr.gg/353161/team-heretics-vs-fut-esports-champions-tour-2024-emea-stage-2-w2
+1184,FUT Esports,40,2024/06/21,W,2:0,Natus Vincere,VCT 24: EMEA Stage 2,https://www.vlr.gg/353158/natus-vincere-vs-fut-esports-champions-tour-2024-emea-stage-2-w1
+1184,FUT Esports,41,2024/06/18,W,2:1,KOI,VCT 24: EMEA Stage 2,https://www.vlr.gg/353153/fut-esports-vs-koi-champions-tour-2024-emea-stage-2-w1
+1184,FUT Esports,42,2024/06/03,L,0:2,Team Heretics,VCT 24: Masters Shanghai,https://www.vlr.gg/348472/team-heretics-vs-fut-esports-champions-tour-2024-masters-shanghai-lr2
+1184,FUT Esports,43,2024/06/01,W,2:1,FNATIC,VCT 24: Masters Shanghai,https://www.vlr.gg/348468/fut-esports-vs-fnatic-champions-tour-2024-masters-shanghai-lr1
+1184,FUT Esports,44,2024/05/30,L,0:2,100 Thieves,VCT 24: Masters Shanghai,https://www.vlr.gg/348465/100-thieves-vs-fut-esports-champions-tour-2024-masters-shanghai-ubqf
+1184,FUT Esports,45,2024/05/27,W,2:1,LEVIATÁN,VCT 24: Masters Shanghai,https://www.vlr.gg/348461/fut-esports-vs-leviat-n-champions-tour-2024-masters-shanghai-r3
+1184,FUT Esports,46,2024/05/26,W,2:0,Dragon Ranger Gaming,VCT 24: Masters Shanghai,https://www.vlr.gg/348460/dragon-ranger-gaming-vs-fut-esports-champions-tour-2024-masters-shanghai-r2
+1184,FUT Esports,47,2024/05/23,L,1:2,FunPlus Phoenix,VCT 24: Masters Shanghai,https://www.vlr.gg/348061/funplus-phoenix-vs-fut-esports-champions-tour-2024-masters-shanghai-r1
+1184,FUT Esports,48,2024/05/11,L,1:3,FNATIC,VCT 24: EMEA Stage 1,https://www.vlr.gg/341823/fnatic-vs-fut-esports-champions-tour-2024-emea-stage-1-lbf
+1184,FUT Esports,49,2024/05/10,W,2:0,Karmine Corp,VCT 24: EMEA Stage 1,https://www.vlr.gg/341822/karmine-corp-vs-fut-esports-champions-tour-2024-emea-stage-1-lr1
+1184,FUT Esports,50,2024/05/09,L,0:2,Team Heretics,VCT 24: EMEA Stage 1,https://www.vlr.gg/341819/fut-esports-vs-team-heretics-champions-tour-2024-emea-stage-1-ubsf

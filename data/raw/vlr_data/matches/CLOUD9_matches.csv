@@ -1,0 +1,51 @@
+team_id,team_name,match_number,date,result,score,opponent,tournament,match_url
+188,Cloud9,1,2025/05/20,L,0:2,NRG,EWC 2025,https://www.vlr.gg/488015/cloud9-vs-nrg-esports-world-cup-2025-lbf
+188,Cloud9,2,2025/05/18,L,0:2,100 Thieves,EWC 2025,https://www.vlr.gg/488009/100-thieves-vs-cloud9-esports-world-cup-2025-ubf
+188,Cloud9,3,2025/05/17,W,2:1,KRÜ Esports,EWC 2025,https://www.vlr.gg/488008/kr-esports-vs-cloud9-esports-world-cup-2025-ubsf
+188,Cloud9,4,2025/05/16,W,2:0,2Game Esports,EWC 2025,https://www.vlr.gg/488005/cloud9-vs-2game-esports-esports-world-cup-2025-ubqf
+188,Cloud9,5,2025/04/25,L,0:2,Evil Geniuses,VCT 25: AMER Stage 1,https://www.vlr.gg/475904/cloud9-vs-evil-geniuses-champions-tour-2025-americas-stage-1-lr1
+188,Cloud9,6,2025/04/24,L,0:2,Sentinels,VCT 25: AMER Stage 1,https://www.vlr.gg/475898/sentinels-vs-cloud9-champions-tour-2025-americas-stage-1-ubr1
+188,Cloud9,7,2025/04/18,L,1:2,G2 Esports,VCT 25: AMER Stage 1,https://www.vlr.gg/459541/g2-esports-vs-cloud9-champions-tour-2025-americas-stage-1-w5
+188,Cloud9,8,2025/04/12,W,2:0,FURIA,VCT 25: AMER Stage 1,https://www.vlr.gg/459537/furia-vs-cloud9-champions-tour-2025-americas-stage-1-w4
+188,Cloud9,9,2025/04/06,L,1:2,MIBR,VCT 25: AMER Stage 1,https://www.vlr.gg/459534/cloud9-vs-mibr-champions-tour-2025-americas-stage-1-w3
+188,Cloud9,10,2025/03/30,W,2:0,LEVIATÁN,VCT 25: AMER Stage 1,https://www.vlr.gg/459528/leviat-n-vs-cloud9-champions-tour-2025-americas-stage-1-w2
+188,Cloud9,11,2025/03/21,W,2:1,NRG,VCT 25: AMER Stage 1,https://www.vlr.gg/459517/cloud9-vs-nrg-esports-champions-tour-2025-americas-stage-1-w1
+188,Cloud9,12,2025/01/23,L,1:2,MIBR,VCT 25: AMER Kickoff,https://www.vlr.gg/428004/cloud9-vs-mibr-champions-tour-2025-americas-kickoff-lr1
+188,Cloud9,13,2025/01/19,L,0:2,G2 Esports,VCT 25: AMER Kickoff,https://www.vlr.gg/427997/g2-esports-vs-cloud9-champions-tour-2025-americas-kickoff-ubqf
+188,Cloud9,14,2025/01/17,W,2:0,NRG,VCT 25: AMER Kickoff,https://www.vlr.gg/427993/nrg-esports-vs-cloud9-champions-tour-2025-americas-kickoff-ur1
+188,Cloud9,15,2024/11/23,L,1:3,T1,Red Bull HG #5,https://www.vlr.gg/424008/t1-vs-cloud9-red-bull-home-ground-5-gf
+188,Cloud9,16,2024/11/22,W,2:0,G2 Esports,Red Bull HG #5,https://www.vlr.gg/424007/g2-esports-vs-cloud9-red-bull-home-ground-5-sf
+188,Cloud9,17,2024/11/21,W,1:0,Team Heretics,Red Bull HG #5,https://www.vlr.gg/423972/team-heretics-vs-cloud9-red-bull-home-ground-5-r2
+188,Cloud9,18,2024/11/21,W,1:0,FNATIC,Red Bull HG #5,https://www.vlr.gg/423621/fnatic-vs-cloud9-red-bull-home-ground-5-r1
+188,Cloud9,19,2024/11/02,L,1:2,NRG,SEN City Classic,https://www.vlr.gg/417828/nrg-esports-vs-cloud9-sen-city-classic-d2
+188,Cloud9,20,2024/11/02,L,1:2,Evil Geniuses,SEN City Classic,https://www.vlr.gg/417827/evil-geniuses-vs-cloud9-sen-city-classic-d2
+188,Cloud9,21,2024/11/01,L,0:2,Sentinels,SEN City Classic,https://www.vlr.gg/417824/sentinels-vs-cloud9-sen-city-classic-d1
+188,Cloud9,22,2024/09/29,W,2:0,Sentinels,Red Bull HG #5,https://www.vlr.gg/408415/sentinels-vs-cloud9-red-bull-home-ground-5-gf
+188,Cloud9,23,2024/09/29,W,2:1,Moist x Shopify,Red Bull HG #5,https://www.vlr.gg/408413/cloud9-vs-moist-x-shopify-red-bull-home-ground-5-sf
+188,Cloud9,24,2024/07/17,L,1:2,KRÜ Esports,VCT 24: AMER Stage 2,https://www.vlr.gg/371266/kr-esports-vs-cloud9-champions-tour-2024-americas-stage-2-ko
+188,Cloud9,25,2024/07/12,L,0:2,KRÜ Esports,VCT 24: AMER Stage 2,https://www.vlr.gg/353197/cloud9-vs-kr-esports-champions-tour-2024-americas-stage-2-w4
+188,Cloud9,26,2024/07/07,W,2:1,NRG,VCT 24: AMER Stage 2,https://www.vlr.gg/353195/nrg-esports-vs-cloud9-champions-tour-2024-americas-stage-2-w3
+188,Cloud9,27,2024/07/01,L,0:2,Sentinels,VCT 24: AMER Stage 2,https://www.vlr.gg/353187/sentinels-vs-cloud9-champions-tour-2024-americas-stage-2-w2
+188,Cloud9,28,2024/06/24,L,1:2,G2 Esports,VCT 24: AMER Stage 2,https://www.vlr.gg/353181/g2-esports-vs-cloud9-champions-tour-2024-americas-stage-2-w1
+188,Cloud9,29,2024/05/08,L,0:2,G2 Esports,VCT 24: AMER Stage 1,https://www.vlr.gg/337407/cloud9-vs-g2-esports-champions-tour-2024-americas-stage-1-ko
+188,Cloud9,30,2024/05/05,W,2:0,MIBR,VCT 24: AMER Stage 1,https://www.vlr.gg/314653/cloud9-vs-mibr-champions-tour-2024-americas-stage-1-w5
+188,Cloud9,31,2024/04/28,W,2:1,FURIA,VCT 24: AMER Stage 1,https://www.vlr.gg/314646/cloud9-vs-furia-champions-tour-2024-americas-stage-1-w4
+188,Cloud9,32,2024/04/22,L,0:2,100 Thieves,VCT 24: AMER Stage 1,https://www.vlr.gg/314639/cloud9-vs-100-thieves-champions-tour-2024-americas-stage-1-w3
+188,Cloud9,33,2024/04/20,W,2:1,LOUD,VCT 24: AMER Stage 1,https://www.vlr.gg/314635/cloud9-vs-loud-champions-tour-2024-americas-stage-1-w3
+188,Cloud9,34,2024/04/15,W,2:1,Evil Geniuses,VCT 24: AMER Stage 1,https://www.vlr.gg/314632/cloud9-vs-evil-geniuses-champions-tour-2024-americas-stage-1-w2
+188,Cloud9,35,2024/04/06,W,2:1,LEVIATÁN,VCT 24: AMER Stage 1,https://www.vlr.gg/314622/cloud9-vs-leviat-n-champions-tour-2024-americas-stage-1-w1
+188,Cloud9,36,2024/02/25,L,0:2,MIBR,VCT 24: AMER Kickoff,https://www.vlr.gg/295609/cloud9-vs-mibr-champions-tour-2024-americas-kickoff-decider-a
+188,Cloud9,37,2024/02/23,L,0:2,NRG,VCT 24: AMER Kickoff,https://www.vlr.gg/295607/nrg-esports-vs-cloud9-champions-tour-2024-americas-kickoff-winners-a
+188,Cloud9,38,2024/02/16,W,2:1,MIBR,VCT 24: AMER Kickoff,https://www.vlr.gg/295606/cloud9-vs-mibr-champions-tour-2024-americas-kickoff-opening-a
+188,Cloud9,39,2024/01/14,L,0:2,Oxygen Esports,LxT Invitational 2,https://www.vlr.gg/294187/oxygen-esports-vs-cloud9-ludwig-x-tarik-invitational-2-lbf
+188,Cloud9,40,2024/01/13,W,2:1,100 Thieves,LxT Invitational 2,https://www.vlr.gg/294186/cloud9-vs-100-thieves-ludwig-x-tarik-invitational-2-lr1
+188,Cloud9,41,2024/01/13,L,0:2,Moist x Shopify,LxT Invitational 2,https://www.vlr.gg/294182/cloud9-vs-moist-x-shopify-ludwig-x-tarik-invitational-2-ubsf
+188,Cloud9,42,2023/11/12,L,0:2,FURIA,Superdome '23: Colombia,https://www.vlr.gg/281031/cloud9-vs-furia-superdome-2023-colombia-lbf
+188,Cloud9,43,2023/11/11,L,0:2,LEVIATÁN,Superdome '23: Colombia,https://www.vlr.gg/281028/leviat-n-vs-cloud9-superdome-2023-colombia-ubf
+188,Cloud9,44,2023/11/10,W,2:1,FURIA,Superdome '23: Colombia,https://www.vlr.gg/281027/furia-vs-cloud9-superdome-2023-colombia-ubsf
+188,Cloud9,45,2023/11/05,L,2:3,FNATIC,Red Bull HG #4,https://www.vlr.gg/283101/cloud9-vs-fnatic-red-bull-home-ground-4-gf
+188,Cloud9,46,2023/11/04,W,2:1,FUT Esports,Red Bull HG #4,https://www.vlr.gg/283099/fut-esports-vs-cloud9-red-bull-home-ground-4-sf
+188,Cloud9,47,2023/11/03,W,2:1,ZETA DIVISION,Red Bull HG #4,https://www.vlr.gg/283097/cloud9-vs-zeta-division-red-bull-home-ground-4-qf
+188,Cloud9,48,2023/11/03,W,1:0,FENNEL,Red Bull HG #4,https://www.vlr.gg/283092/cloud9-vs-fennel-red-bull-home-ground-4-r2
+188,Cloud9,49,2023/11/02,L,0:1,ZETA DIVISION,Red Bull HG #4,https://www.vlr.gg/283088/cloud9-vs-zeta-division-red-bull-home-ground-4-r1
+188,Cloud9,50,2023/10/08,W,2:1,DRX,TEN Global Invitational,https://www.vlr.gg/278616/cloud9-vs-drx-ten-global-invitational-gf

@@ -1,0 +1,51 @@
+team_id,team_name,match_number,date,result,score,opponent,tournament,match_url
+17,Gen.G,1,2025/07/13,W,2:0,Paper Rex,EWC 2025,https://www.vlr.gg/510156/paper-rex-vs-gen-g-esports-world-cup-2025-cf
+17,Gen.G,2,2025/07/12,L,1:2,Team Heretics,EWC 2025,https://www.vlr.gg/510154/gen-g-vs-team-heretics-esports-world-cup-2025-sf
+17,Gen.G,3,2025/07/11,W,2:0,NRG,EWC 2025,https://www.vlr.gg/510151/nrg-vs-gen-g-esports-world-cup-2025-qf
+17,Gen.G,4,2025/07/10,W,2:0,EDward Gaming,EWC 2025,https://www.vlr.gg/510147/gen-g-vs-edward-gaming-esports-world-cup-2025-decider-d
+17,Gen.G,5,2025/07/08,L,0:2,FNATIC,EWC 2025,https://www.vlr.gg/510145/fnatic-vs-gen-g-esports-world-cup-2025-winners-d
+17,Gen.G,6,2025/07/08,W,1:0,EDward Gaming,EWC 2025,https://www.vlr.gg/510144/gen-g-vs-edward-gaming-esports-world-cup-2025-opening-d
+17,Gen.G,7,2025/06/17,L,1:2,G2 Esports,Masters Toronto 2025,https://www.vlr.gg/498631/gen-g-vs-g2-esports-valorant-masters-toronto-2025-lr2
+17,Gen.G,8,2025/06/16,L,0:2,Wolves Esports,Masters Toronto 2025,https://www.vlr.gg/498626/wolves-esports-vs-gen-g-valorant-masters-toronto-2025-ubsf
+17,Gen.G,9,2025/06/14,W,2:1,FNATIC,Masters Toronto 2025,https://www.vlr.gg/498624/fnatic-vs-gen-g-valorant-masters-toronto-2025-ubqf
+17,Gen.G,10,2025/06/09,W,2:0,Paper Rex,Masters Toronto 2025,https://www.vlr.gg/490310/paper-rex-vs-gen-g-champions-tour-2025-masters-toronto-r2-1-0
+17,Gen.G,11,2025/06/08,W,2:0,MIBR,Masters Toronto 2025,https://www.vlr.gg/490306/gen-g-vs-mibr-champions-tour-2025-masters-toronto-r1
+17,Gen.G,12,2025/05/11,L,1:3,Rex Regum Qeon,VCT 25: PAC Stage 1,https://www.vlr.gg/473844/gen-g-vs-rex-regum-qeon-champions-tour-2025-pacific-stage-1-gf
+17,Gen.G,13,2025/05/09,W,2:0,Rex Regum Qeon,VCT 25: PAC Stage 1,https://www.vlr.gg/473841/gen-g-vs-rex-regum-qeon-champions-tour-2025-pacific-stage-1-ubf
+17,Gen.G,14,2025/04/27,W,2:0,BOOM Esports,VCT 25: PAC Stage 1,https://www.vlr.gg/473837/boom-esports-vs-gen-g-champions-tour-2025-pacific-stage-1-ubsf
+17,Gen.G,15,2025/04/26,W,2:1,TALON,VCT 25: PAC Stage 1,https://www.vlr.gg/473833/talon-vs-gen-g-champions-tour-2025-pacific-stage-1-ur1
+17,Gen.G,16,2025/04/20,L,1:2,DRX,VCT 25: PAC Stage 1,https://www.vlr.gg/458832/drx-vs-gen-g-champions-tour-2025-pacific-stage-1-w5
+17,Gen.G,17,2025/04/13,W,2:0,Global Esports,VCT 25: PAC Stage 1,https://www.vlr.gg/458826/gen-g-vs-global-esports-champions-tour-2025-pacific-stage-1-w4
+17,Gen.G,18,2025/04/05,W,2:0,DetonatioN FocusMe,VCT 25: PAC Stage 1,https://www.vlr.gg/458817/gen-g-vs-detonation-focusme-champions-tour-2025-pacific-stage-1-w3
+17,Gen.G,19,2025/03/30,W,2:1,Paper Rex,VCT 25: PAC Stage 1,https://www.vlr.gg/458813/gen-g-vs-paper-rex-champions-tour-2025-pacific-stage-1-w2
+17,Gen.G,20,2025/03/24,L,0:2,BOOM Esports,VCT 25: PAC Stage 1,https://www.vlr.gg/458809/gen-g-vs-boom-esports-champions-tour-2025-pacific-stage-1-w1
+17,Gen.G,21,2025/02/08,L,2:3,T1,VCT 25: PAC Kickoff,https://www.vlr.gg/430535/t1-vs-gen-g-champions-tour-2025-pacific-kickoff-lbf
+17,Gen.G,22,2025/02/07,W,2:0,TALON,VCT 25: PAC Kickoff,https://www.vlr.gg/430534/talon-vs-gen-g-champions-tour-2025-pacific-kickoff-lr4
+17,Gen.G,23,2025/02/02,W,2:0,DetonatioN FocusMe,VCT 25: PAC Kickoff,https://www.vlr.gg/430533/gen-g-vs-detonation-focusme-champions-tour-2025-pacific-kickoff-lr3
+17,Gen.G,24,2025/01/31,L,0:2,DRX,VCT 25: PAC Kickoff,https://www.vlr.gg/430523/gen-g-vs-drx-champions-tour-2025-pacific-kickoff-ubsf
+17,Gen.G,25,2025/01/25,W,2:1,Rex Regum Qeon,VCT 25: PAC Kickoff,https://www.vlr.gg/430520/gen-g-vs-rex-regum-qeon-champions-tour-2025-pacific-kickoff-ubqf
+17,Gen.G,26,2024/12/15,L,0:3,NRG,SOOP League,https://www.vlr.gg/425355/nrg-esports-vs-gen-g-soop-valorant-league-gf
+17,Gen.G,27,2024/12/14,W,2:0,DRX,SOOP League,https://www.vlr.gg/425354/drx-vs-gen-g-soop-valorant-league-sf
+17,Gen.G,28,2024/12/12,W,2:0,Sentinels,SOOP League,https://www.vlr.gg/425339/sentinels-vs-gen-g-soop-valorant-league-decider-a
+17,Gen.G,29,2024/12/12,W,2:0,TALON,SOOP League,https://www.vlr.gg/425338/gen-g-vs-talon-soop-valorant-league-elim-a
+17,Gen.G,30,2024/12/10,L,0:2,Sentinels,SOOP League,https://www.vlr.gg/425335/sentinels-vs-gen-g-soop-valorant-league-opening-a
+17,Gen.G,31,2024/11/25,L,0:2,Trace Esports,Radiant Asia Invitational,https://www.vlr.gg/418813/trace-esports-vs-gen-g-valorant-radiant-asia-invitational-r3
+17,Gen.G,32,2024/11/23,L,1:2,DRX,Radiant Asia Invitational,https://www.vlr.gg/418808/gen-g-vs-drx-valorant-radiant-asia-invitational-r2-1-0
+17,Gen.G,33,2024/11/21,W,2:1,Paper Rex,Radiant Asia Invitational,https://www.vlr.gg/418805/paper-rex-vs-gen-g-valorant-radiant-asia-invitational-r1
+17,Gen.G,34,2024/11/03,W,2:0,EDward Gaming,GES 2024,https://www.vlr.gg/414310/gen-g-vs-edward-gaming-gwangju-esports-series-asia-2024-d2
+17,Gen.G,35,2024/11/02,W,2:0,Trace Esports,GES 2024,https://www.vlr.gg/414306/gen-g-vs-trace-esports-gwangju-esports-series-asia-2024-d1
+17,Gen.G,36,2024/10/27,W,2:1,TALON,TEN Asia Invitational,https://www.vlr.gg/415860/gen-g-vs-talon-esports-ten-valorant-asia-invitational-gf
+17,Gen.G,37,2024/10/26,L,0:1,DRX,TEN Asia Invitational,https://www.vlr.gg/415856/gen-g-vs-drx-ten-valorant-asia-invitational-rr
+17,Gen.G,38,2024/10/26,W,1:0,TALON,TEN Asia Invitational,https://www.vlr.gg/415855/gen-g-vs-talon-esports-ten-valorant-asia-invitational-rr
+17,Gen.G,39,2024/10/26,W,1:0,FunPlus Phoenix,TEN Asia Invitational,https://www.vlr.gg/415852/gen-g-vs-funplus-phoenix-ten-valorant-asia-invitational-rr
+17,Gen.G,40,2024/08/10,L,0:2,Sentinels,VCT 2024: Champions,https://www.vlr.gg/378666/gen-g-vs-sentinels-valorant-champions-2024-decider-b
+17,Gen.G,41,2024/08/06,L,1:2,Team Heretics,VCT 2024: Champions,https://www.vlr.gg/378664/gen-g-vs-team-heretics-valorant-champions-2024-winners-b
+17,Gen.G,42,2024/08/01,W,2:0,Sentinels,VCT 2024: Champions,https://www.vlr.gg/378662/gen-g-vs-sentinels-valorant-champions-2024-opening-b
+17,Gen.G,43,2024/07/21,W,3:1,DRX,VCT 24: PAC Stage 2,https://www.vlr.gg/365321/gen-g-vs-drx-champions-tour-2024-pacific-stage-2-gf
+17,Gen.G,44,2024/07/14,W,2:1,DRX,VCT 24: PAC Stage 2,https://www.vlr.gg/365320/gen-g-vs-drx-champions-tour-2024-pacific-stage-2-ubf
+17,Gen.G,45,2024/07/13,W,2:0,Paper Rex,VCT 24: PAC Stage 2,https://www.vlr.gg/365318/paper-rex-vs-gen-g-champions-tour-2024-pacific-stage-2-ubsf
+17,Gen.G,46,2024/07/12,W,2:0,Rex Regum Qeon,VCT 24: PAC Stage 2,https://www.vlr.gg/365316/gen-g-vs-rex-regum-qeon-champions-tour-2024-pacific-stage-2-ko
+17,Gen.G,47,2024/07/07,L,1:2,Team Secret,VCT 24: PAC Stage 2,https://www.vlr.gg/314362/gen-g-vs-team-secret-champions-tour-2024-pacific-stage-2-w4
+17,Gen.G,48,2024/07/05,W,2:0,Global Esports,VCT 24: PAC Stage 2,https://www.vlr.gg/314359/gen-g-vs-global-esports-champions-tour-2024-pacific-stage-2-w4
+17,Gen.G,49,2024/06/30,W,2:1,BLEED,VCT 24: PAC Stage 2,https://www.vlr.gg/314355/bleed-vs-gen-g-champions-tour-2024-pacific-stage-2-w3
+17,Gen.G,50,2024/06/16,W,2:1,T1,VCT 24: PAC Stage 2,https://www.vlr.gg/314342/t1-vs-gen-g-champions-tour-2024-pacific-stage-2-w1

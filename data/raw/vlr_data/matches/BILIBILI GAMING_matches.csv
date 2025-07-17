@@ -1,0 +1,51 @@
+team_id,team_name,match_number,date,result,score,opponent,tournament,match_url
+12010,Bilibili Gaming,1,2025/07/10,L,1:2,Karmine Corp,EWC 2025,https://www.vlr.gg/510132/karmine-corp-vs-bilibili-gaming-esports-world-cup-2025-decider-a
+12010,Bilibili Gaming,2,2025/07/09,W,2:1,G2 Esports,EWC 2025,https://www.vlr.gg/510131/bilibili-gaming-vs-g2-esports-esports-world-cup-2025-elim-a
+12010,Bilibili Gaming,3,2025/07/08,L,0:1,Paper Rex,EWC 2025,https://www.vlr.gg/510127/paper-rex-vs-bilibili-gaming-esports-world-cup-2025-opening-a
+12010,Bilibili Gaming,4,2025/07/04,W,2:0,TYLOO,VCT 25: CN Stage 2,https://www.vlr.gg/506931/bilibili-gaming-vs-tyloo-vct-2025-china-stage-2-w1
+12010,Bilibili Gaming,5,2025/06/11,L,0:2,Wolves Esports,Masters Toronto 2025,https://www.vlr.gg/490315/bilibili-gaming-vs-wolves-esports-valorant-masters-2025-toronto-r3-1-1
+12010,Bilibili Gaming,6,2025/06/09,L,1:2,Sentinels,Masters Toronto 2025,https://www.vlr.gg/490311/bilibili-gaming-vs-sentinels-champions-tour-2025-masters-toronto-r2-1-0
+12010,Bilibili Gaming,7,2025/06/07,W,2:1,Team Liquid,Masters Toronto 2025,https://www.vlr.gg/490307/bilibili-gaming-vs-team-liquid-champions-tour-2025-masters-toronto-r1
+12010,Bilibili Gaming,8,2025/05/16,L,0:2,DRX,HERO ESPORTS ACL 25,https://www.vlr.gg/481656/drx-vs-bilibili-gaming-hero-esports-asian-champions-league-2025-lr3
+12010,Bilibili Gaming,9,2025/05/15,W,2:0,Trace Esports,HERO ESPORTS ACL 25,https://www.vlr.gg/481655/bilibili-gaming-vs-trace-esports-hero-esports-asian-champions-league-2025-lr2
+12010,Bilibili Gaming,10,2025/05/14,L,0:2,DRX,HERO ESPORTS ACL 25,https://www.vlr.gg/481654/bilibili-gaming-vs-drx-hero-esports-asian-champions-league-2025-lr2
+12010,Bilibili Gaming,11,2025/05/08,L,0:2,Titan Esports Club,CN EVO 25: Act 2 X ACL,https://www.vlr.gg/485372/titan-esports-club-vs-bilibili-gaming-china-evolution-series-act-2-x-asian-champions-league-ro12
+12010,Bilibili Gaming,12,2025/05/04,L,1:3,Xi Lai Gaming,VCT 25: CN Stage 1,https://www.vlr.gg/473244/xi-lai-gaming-vs-bilibili-gaming-champions-tour-2025-china-stage-1-gf
+12010,Bilibili Gaming,13,2025/05/03,W,3:0,Wolves Esports,VCT 25: CN Stage 1,https://www.vlr.gg/473243/wolves-esports-vs-bilibili-gaming-champions-tour-2025-china-stage-1-lbf
+12010,Bilibili Gaming,14,2025/05/02,W,2:1,EDward Gaming,VCT 25: CN Stage 1,https://www.vlr.gg/473242/edward-gaming-vs-bilibili-gaming-champions-tour-2025-china-stage-1-lr3
+12010,Bilibili Gaming,15,2025/04/20,W,2:0,Trace Esports,VCT 25: CN Stage 1,https://www.vlr.gg/473240/bilibili-gaming-vs-trace-esports-champions-tour-2025-china-stage-1-lr2
+12010,Bilibili Gaming,16,2025/04/19,L,0:2,Wolves Esports,VCT 25: CN Stage 1,https://www.vlr.gg/473237/bilibili-gaming-vs-wolves-esports-champions-tour-2025-china-stage-1-ubsf
+12010,Bilibili Gaming,17,2025/04/12,L,1:2,Trace Esports,VCT 25: CN Stage 1,https://www.vlr.gg/450074/bilibili-gaming-vs-trace-esports-champions-tour-2025-china-stage-1-w5
+12010,Bilibili Gaming,18,2025/04/04,W,2:1,Wolves Esports,VCT 25: CN Stage 1,https://www.vlr.gg/450066/bilibili-gaming-vs-wolves-esports-champions-tour-2025-china-stage-1-w4
+12010,Bilibili Gaming,19,2025/03/30,W,2:0,All Gamers,VCT 25: CN Stage 1,https://www.vlr.gg/450064/all-gamers-vs-bilibili-gaming-champions-tour-2025-china-stage-1-w3
+12010,Bilibili Gaming,20,2025/03/23,W,2:1,JDG Esports,VCT 25: CN Stage 1,https://www.vlr.gg/450058/bilibili-gaming-vs-jdg-esports-champions-tour-2025-china-stage-1-w2
+12010,Bilibili Gaming,21,2025/03/13,W,2:1,Xi Lai Gaming,VCT 25: CN Stage 1,https://www.vlr.gg/450047/xi-lai-gaming-vs-bilibili-gaming-champions-tour-2025-china-stage-1-w1
+12010,Bilibili Gaming,22,2025/02/15,W,3:0,JDG Esports,CN EVO 25: Act 1,https://www.vlr.gg/440541/bilibili-gaming-vs-jdg-esports-china-evolution-series-act-1-cf
+12010,Bilibili Gaming,23,2025/02/14,L,0:2,Nova Esports,CN EVO 25: Act 1,https://www.vlr.gg/440538/bilibili-gaming-vs-nova-esports-china-evolution-series-act-1-sf
+12010,Bilibili Gaming,24,2025/02/10,W,2:0,TYLOO,CN EVO 25: Act 1,https://www.vlr.gg/440534/bilibili-gaming-vs-tyloo-china-evolution-series-act-1-qf
+12010,Bilibili Gaming,25,2025/01/24,L,0:3,EDward Gaming,VCT 25: CN Kickoff,https://www.vlr.gg/430860/bilibili-gaming-vs-edward-gaming-champions-tour-2025-china-kickoff-lbf
+12010,Bilibili Gaming,26,2025/01/23,L,1:2,Trace Esports,VCT 25: CN Kickoff,https://www.vlr.gg/430847/bilibili-gaming-vs-trace-esports-champions-tour-2025-china-kickoff-ubf
+12010,Bilibili Gaming,27,2025/01/20,W,2:0,FunPlus Phoenix,VCT 25: CN Kickoff,https://www.vlr.gg/430845/bilibili-gaming-vs-funplus-phoenix-champions-tour-2025-china-kickoff-ubsf
+12010,Bilibili Gaming,28,2025/01/16,W,2:1,Xi Lai Gaming,VCT 25: CN Kickoff,https://www.vlr.gg/430841/bilibili-gaming-vs-xi-lai-gaming-champions-tour-2025-china-kickoff-ubqf
+12010,Bilibili Gaming,29,2024/12/13,L,1:2,NRG,SOOP League,https://www.vlr.gg/425343/nrg-esports-vs-bilibili-gaming-soop-valorant-league-elim-b
+12010,Bilibili Gaming,30,2024/12/11,L,1:2,DRX,SOOP League,https://www.vlr.gg/425341/drx-vs-bilibili-gaming-soop-valorant-league-opening-b
+12010,Bilibili Gaming,31,2024/11/24,L,1:2,Trace Esports,Radiant Asia Invitational,https://www.vlr.gg/418810/trace-esports-vs-bilibili-gaming-valorant-radiant-asia-invitational-r2-0-1
+12010,Bilibili Gaming,32,2024/11/22,L,0:2,DRX,Radiant Asia Invitational,https://www.vlr.gg/418806/drx-vs-bilibili-gaming-valorant-radiant-asia-invitational-r1
+12010,Bilibili Gaming,33,2024/11/10,W,3:1,Wolves Esports,FGC 24,https://www.vlr.gg/414856/bilibili-gaming-vs-wolves-esports-fgc-invitational-2024-main-event-gf
+12010,Bilibili Gaming,34,2024/11/08,W,2:1,Wolves Esports,FGC 24,https://www.vlr.gg/414855/wolves-esports-vs-bilibili-gaming-fgc-invitational-2024-main-event-ubf
+12010,Bilibili Gaming,35,2024/11/06,W,2:0,Nova Esports,FGC 24,https://www.vlr.gg/414854/bilibili-gaming-vs-nova-esports-fgc-invitational-2024-main-event-ubsf
+12010,Bilibili Gaming,36,2024/11/01,W,2:1,Xi Lai Gaming,FGC 24,https://www.vlr.gg/414851/bilibili-gaming-vs-xi-lai-gaming-fgc-invitational-2024-main-event-ubqf
+12010,Bilibili Gaming,37,2024/08/08,L,0:2,KRÜ Esports,VCT 2024: Champions,https://www.vlr.gg/378659/bilibili-gaming-vs-kr-esports-valorant-champions-2024-elim-a
+12010,Bilibili Gaming,38,2024/08/02,L,0:2,FNATIC,VCT 2024: Champions,https://www.vlr.gg/378656/fnatic-vs-bilibili-gaming-valorant-champions-2024-opening-a
+12010,Bilibili Gaming,39,2024/07/18,L,1:2,FunPlus Phoenix,VCT 24: CN Stage 2,https://www.vlr.gg/370728/funplus-phoenix-vs-bilibili-gaming-champions-tour-2024-china-stage-2-lr1
+12010,Bilibili Gaming,40,2024/07/17,L,1:2,EDward Gaming,VCT 24: CN Stage 2,https://www.vlr.gg/370724/edward-gaming-vs-bilibili-gaming-champions-tour-2024-china-stage-2-ubsf
+12010,Bilibili Gaming,41,2024/07/16,W,2:0,JDG Esports,VCT 24: CN Stage 2,https://www.vlr.gg/370722/jdg-esports-vs-bilibili-gaming-champions-tour-2024-china-stage-2-ko
+12010,Bilibili Gaming,42,2024/07/06,L,0:2,EDward Gaming,VCT 24: CN Stage 2,https://www.vlr.gg/359626/edward-gaming-vs-bilibili-gaming-champions-tour-2024-china-stage-2-w4
+12010,Bilibili Gaming,43,2024/06/30,W,2:0,Dragon Ranger Gaming,VCT 24: CN Stage 2,https://www.vlr.gg/359618/bilibili-gaming-vs-dragon-ranger-gaming-champions-tour-2024-china-stage-2-w3
+12010,Bilibili Gaming,44,2024/06/23,W,2:1,Nova Esports,VCT 24: CN Stage 2,https://www.vlr.gg/359611/nova-esports-vs-bilibili-gaming-champions-tour-2024-china-stage-2-w2
+12010,Bilibili Gaming,45,2024/06/16,W,2:0,Wolves Esports,VCT 24: CN Stage 2,https://www.vlr.gg/359605/bilibili-gaming-vs-wolves-esports-champions-tour-2024-china-stage-2-w1
+12010,Bilibili Gaming,46,2024/05/04,L,0:2,FunPlus Phoenix,VCT 24: CN Stage 1,https://www.vlr.gg/319792/bilibili-gaming-vs-funplus-phoenix-champions-tour-2024-china-stage-1-w5
+12010,Bilibili Gaming,47,2024/04/28,W,2:0,JDG Esports,VCT 24: CN Stage 1,https://www.vlr.gg/319788/bilibili-gaming-vs-jd-gaming-champions-tour-2024-china-stage-1-w4
+12010,Bilibili Gaming,48,2024/04/26,L,1:2,Titan Esports Club,VCT 24: CN Stage 1,https://www.vlr.gg/319783/titan-esports-club-vs-bilibili-gaming-champions-tour-2024-china-stage-1-w4
+12010,Bilibili Gaming,49,2024/04/20,L,0:2,All Gamers,VCT 24: CN Stage 1,https://www.vlr.gg/319779/bilibili-gaming-vs-all-gamers-champions-tour-2024-china-stage-1-w3
+12010,Bilibili Gaming,50,2024/04/13,L,1:2,Trace Esports,VCT 24: CN Stage 1,https://www.vlr.gg/319774/trace-esports-vs-bilibili-gaming-champions-tour-2024-china-stage-1-w2
