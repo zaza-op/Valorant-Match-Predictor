@@ -1,0 +1,36 @@
+# Byte‑compiled / cache
+**/__pycache__/
+**/*.py[cod]
+*$py.class
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+untitled-checkpoint
+
+# Virtual env inside src
+/src/valorant-ml-env/
+
+# Notebook outputs
+*.ipynb_checkpoints
+*.nb.html
+
+# IDE/editor folders (optional)
+/.vscode/
+/.idea/
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# Logs and local databases
+*.log
+*.sqlite3
+
+# Env vars
+.env
+*.env
+
+# Distribution / build
+build/
+dist/
+*.egg-info/

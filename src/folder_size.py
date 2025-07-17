@@ -17,5 +17,5 @@ def get_folder_size(folder_path):
     print(f"\nTotal: {total_mb:.2f} MB across {file_count} files")
     return total_mb
 
-# Check your processed data
+
 get_folder_size("data/raw/")
