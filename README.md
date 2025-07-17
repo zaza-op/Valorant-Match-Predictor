@@ -1,2 +1,2 @@
-# Valorant-Match-Precictor
+# Valorant-Match-Predictor
 In progress machine learning project that scrapes vlr.gg for pro scene match data in order to be used to predict future matches using an ML pipeline
