@@ -1,219 +1,134 @@
-# Valorant Competitive Match Prediction: A Machine Learning Approach to Professional Esports Forecasting
+# Valorant Match Prediction: Machine Learning Analysis of Professional Esports
 
-## Abstract
+This project develops a predictive model for professional Valorant match outcomes using historical performance data spanning 2021-2025. The final model achieves 60.5% test accuracy on 1,300 competitive matches, demonstrating meaningful predictive capability in the esports domain.
 
-This project develops a machine learning model to predict professional Valorant match outcomes using historical performance data from 1,300 competitive matches spanning 2021-2025. The model achieves **60.5% test accuracy** through sophisticated feature engineering and reveals novel insights about competitive esports evolution. Key findings include the discovery of optimal temporal windows for performance prediction and evidence of increasing predictability in mature competitive gaming environments.
+## Research Motivation
 
-## Executive Summary
+Traditional sports analytics has well-established frameworks for performance prediction, but competitive esports presents unique challenges. Unlike traditional sports with decades of statistical history, Valorant's competitive scene is relatively young and rapidly evolving. This creates an interesting research question: how do we build reliable predictive models in a domain where the underlying game mechanics, competitive meta, and player skill distributions are constantly shifting?
 
-### Key Results
-- **Final Model Accuracy**: 60.5% on held-out test data (8.5% improvement over random baseline)
-- **Training Accuracy**: 55.7% (demonstrating strong generalization without overfitting)
-- **Dataset**: 1,300 professional matches from 43 tier-1 VCT teams
-- **Validation**: Comprehensive cross-validation, bootstrap testing, and temporal stability analysis
+My approach focuses on identifying stable patterns in team performance while accounting for the temporal dynamics inherent to competitive gaming.
 
-### Novel Contributions
-1. **Temporal Optimization Discovery**: 20-day rolling windows identified as optimal for Valorant performance prediction
-2. **Esports Maturation Hypothesis**: Empirical evidence that competitive scenes become more predictable over time
-3. **Feature Synergy Analysis**: Mathematical demonstration of exponential improvement when predictive features align
-4. **Head-to-Head Minimum Threshold**: Optimal sample size of 2 previous matches for reliable historical predictions
+## Key Findings
+
+The most significant discovery involves the temporal evolution of predictability in competitive Valorant. The model shows markedly better performance on recent matches (60.5% accuracy) compared to historical data (55.7% training accuracy). This suggests that as the competitive ecosystem matures, team hierarchies become more established and matchup outcomes more predictable.
+
+Through systematic experimentation, I identified 20-day rolling windows as optimal for feature calculation. This finding has implications beyond just this dataset - it suggests there's a natural time horizon for meaningful performance trends in tactical FPS games.
+
+The model also demonstrates strong feature synergy effects. Individual features achieve modest performance (52-57% accuracy), but their combination reaches 60.5%, indicating positive interactions when multiple performance indicators align.
+
+## Dataset and Preprocessing
+
+The dataset originates from 2,100+ professional Valorant matches across major VCT tournaments. All data was scraped personally from VLR.gg's website using a custom selenium scraper, and a painful amount of regular expressions. 
+
+After applying data quality controls and feature engineering requirements, 1,300 matches remained with complete feature coverage. This reduction primarily stems from many matches scraped lacking an available R2, or, Rating 2.0 score for their players. Rating 2.0 is similar to KDA or ACS, a general rating score for how the player performed given a specific game, but more nuanced, and is calculated by VLR.GG. 
+For more information on R2 Scores:
+https://www.vlr.gg/381456/vlr-rating-2-0-update
+
+The final dataset covers 43 tier-1 organizations competing between November 2021 and July 2025, providing both geographical diversity (Americas, EMEA, Pacific regions) and temporal depth for analysis.
+
+Data preprocessing involved standardizing team identifiers across tournaments, parsing nested match results (maps and round scores), and implementing temporal validation safeguards to prevent data leakage.
 
 ## Methodology
 
-### Data Collection and Preprocessing
-The dataset consists of 1,300 professional Valorant matches from major VCT tournaments between November 2021 and July 2025, covering 43 tier-1 competitive teams. Each match record includes:
-- Individual player performance ratings (R2 Score-based metrics)
-- Map-by-map scores and outcomes
-- Tournament context and dates
-- Team compositions and opponent information
-
-Data quality assurance included removal of incomplete matches, validation of team abbreviations, and temporal consistency checks.
-
 ### Feature Engineering
 
-The model employs four predictive features:
+I developed four predictive features based on different aspects of competitive performance:
 
-#### 1. Team Skill Advantage (R2_advantage)
-```python
-r2_advantage = rolling_20d_my_rating - rolling_20d_opponent_rating
-```
-Quantifies the skill differential between teams using 20-day rolling averages of individual player R2 ratings, #R2 stands for the Rating 2.0 score VLR.gg calculates and uses for players, similar to KDA, but more complex. This feature captures fundamental team strength while accounting for recent form fluctuations.
+**1. Team Skill Differential (r2_advantage)**  
+Quantifies fundamental skill gaps using 20-day rolling averages of individual player ratings. This captures baseline team strength while adapting to roster changes and form fluctuations.
 
-#### 2. Historical Round Dominance (rolling_round_diff)
-```python
-rolling_round_diff = rolling_average(our_total_rounds - their_total_rounds, 20_days)
-```
-Measures each team's historical tendency to win matches by large or small margins. Positive values indicate teams that typically dominate opponents, while negative values suggest teams that struggle or play close matches.
+**2. Historical Dominance Patterns (rolling_round_diff)**  
+Measures teams' tendencies to win decisively versus playing close matches. Some teams consistently dominate weaker opponents while others have closer contests regardless of skill gap - a pattern that tends to persist over time.
 
-#### 3. Recent Momentum (recent_form)
-```python
-recent_form = win_rate_last_5_matches_within_30_days
-```
-Captures short-term team momentum by calculating win percentage over the most recent 5 matches within a 30-day window. This feature accounts for psychological factors, meta adaptation, and roster chemistry effects.
+**3. Recent Competitive Form (recent_form)**  
+Win rate across the most recent 5 matches within a 30-day window. This feature captures momentum effects, meta adaptation, and short-term roster chemistry while avoiding stale data from extended periods without competition.
 
-#### 4. Head-to-Head Historical Advantage (h2h_advantage)
-```python
-h2h_advantage = historical_win_rate_vs_specific_opponent (minimum 2 previous matches)
-```
-Quantifies matchup-specific advantages based on direct historical competition between teams. Defaults to neutral (0.5) for insufficient match history, with empirically determined minimum threshold of 2 previous encounters.
+**4. Head-to-Head Historical Performance (h2h_advantage)**  
+Win rate against specific opponents based on direct historical matchups. Through empirical testing, I determined that requiring minimum 2 previous encounters optimizes the reliability-coverage tradeoff. Matchups with insufficient history default to neutral (0.5).
 
-### Model Architecture and Validation
+### Model Architecture
 
-**Algorithm**: Logistic Regression with L2 regularization
-**Rationale**: Provides interpretable coefficients while maintaining strong predictive performance for the available sample size (1,300 matches ÷ 4 features = 325 samples per parameter).
+I selected logistic regression as the primary algorithm for several reasons: interpretability of coefficients, exceptional performance with the available sample size, and established precedent in the sports analytics domain.
 
-**Temporal Validation Strategy**:
-- 80/20 chronological split: Training on matches before April 2025, testing on April-July 2025
-- No data leakage: All rolling averages calculated using only historical data via `.shift(1)` operations
-- Cross-validation: 5-fold time-series cross-validation confirms model stability
+The model architecture prioritizes temporal validity through strict chronological validation. All rolling calculations employ `.shift(1)` operations to ensure historical data only, and the 80/20 train-test split maintains temporal ordering.
 
-**Comprehensive Validation Suite**:
-- Individual feature predictive power analysis
-- Bootstrap sampling for model stability assessment
-- Random baseline comparison (model shows 8.5% improvement over chance)
-- Feature importance and coefficient interpretation
+### Validation Framework
 
-## Key Findings and Research Insights
+**Temporal Split Validation**: 80% chronological training (pre-April 2025), 20% testing (April-July 2025)  
+**Cross-Validation**: 5-fold time-series CV yielding 55.8% ± 1.7% mean accuracy  
+**Bootstrap Analysis**: 100 iterations confirming 60.3% ± 1.2% stability  
+**Feature Ablation**: Individual feature contributions validated through solo performance testing
 
-### 1. Temporal Window Optimization
-Through systematic experimentation, 20-day rolling windows proved optimal for Valorant prediction across all features. This finding suggests:
-- **Sufficient context**: Captures enough match history for stable performance estimates
-- **Optimal recency**: Balances historical context with current meta relevance
-- **Meta stability**: Aligns with typical patch cycles and strategic adaptation periods in competitive Valorant
+## Results and Analysis
 
-### 2. Esports Competitive Evolution
-The model demonstrates significantly better performance on recent matches (2025) compared to historical data (2021-2024):
-- **Training data (2021-2024)**: 55.7% accuracy
-- **Test data (2025)**: 60.5% accuracy
-- **Interpretation**: Mature competitive scenes develop more predictable patterns as team hierarchies stabilize and strategic depth increases, furthermore, the abundance of h2h matches may have contributed. It's also possible that due to limited test data set (about 300 matches), predictive power decreased. 
+### Model Performance
+The final model achieves 60.5% test accuracy with 55.7% training accuracy, indicating healthy generalization without overfitting. This represents an 8.5 percentage point improvement over random baseline on test data.
 
-### 3. Feature Synergy Effect
-Individual features show modest predictive power (52-57% accuracy), but combined performance reaches 60.5%. This suggests:
-- **Non-linear interactions**: Features become exponentially more powerful when they align
-- **Confidence amplification**: Multiple confirming signals create high-confidence predictions
-- **Competitive dynamics**: Teams with advantages across multiple dimensions (skill, momentum, matchup history) become highly likely to win
+Cross-validation across temporal folds shows consistent performance, validating the model's stability across different competitive periods. Bootstrap resampling confirms result reliability within tight confidence intervals.
 
-Statistical analysis reveals:
-```
-Individual Feature Performance:
-- R2_advantage: 55.2% (skill differential)
-- rolling_round_diff: 56.7% (dominance patterns)
-- recent_form: 54.4% (momentum)
-- h2h_advantage: 53.6% (matchup history)
+### Feature Analysis
+Individual feature performance reveals interesting patterns:
+- **r2_advantage**: 55.2% (fundamental skill predictor)
+- **rolling_round_diff**: 56.7% (strongest individual feature)
+- **recent_form**: 54.4% (momentum indicator) 
+- **h2h_advantage**: 53.6% (contextual modifier)
 
-Combined Model: 60.5% (demonstrating positive feature interaction)
-```
+The gap between individual (52-57%) and combined (60.5%) performance demonstrates positive feature interactions. When multiple indicators align - skill advantage, recent form, favorable matchup history, and dominance patterns - prediction confidence increases substantially.
 
-### 4. Head-to-Head Optimization
-Empirical testing revealed that requiring minimum 2 previous matches for H2H calculations optimizes performance:
-- **Single matches**: Too noisy for reliable pattern detection
-- **2+ matches**: Begin to establish meaningful competitive relationships
-- **Result**: 59.8% → 60.5% accuracy improvement through threshold adjustment
+### Temporal Analysis
+The performance difference between training and test periods provides evidence for the competitive scene maturation hypothesis. Several factors likely contribute:
+- **Established team hierarchies**: Skill gaps become more consistent
+- **Strategic depth**: Teams develop reliable tactical systems  
+- **Reduced upset frequency**: Random factors matter less as competition matures
 
-## Model Performance Analysis
-
-### Quantitative Results
-| Metric | Training Set | Test Set | Interpretation |
-|--------|-------------|----------|----------------|
-| Accuracy | 55.7% | 60.5% | Strong generalization |
-| Sample Size | 1,037 matches | 261 matches | Adequate test coverage |
-| Baseline Improvement | +5.7% | +8.5% | Significant over random |
-| Cross-Validation | 55.8% ± 1.7% | - | Stable performance |
-
-### Feature Importance (Logistic Regression Coefficients)
-The trained model reveals relative feature importance through coefficient magnitudes:
-1. **Team Skill Advantage**: Highest coefficient magnitude (fundamental predictor)
-2. **Historical Dominance**: Strong secondary predictor (tactical consistency)
-3. **Recent Momentum**: Moderate influence (psychological factors)
-4. **Head-to-Head**: Contextual importance (matchup-specific patterns)
-
-### Generalization Assessment
-Multiple validation approaches confirm model robustness:
-- **Time-series cross-validation**: Consistent performance across temporal folds
-- **Bootstrap sampling**: Stable accuracy distribution (60.3% ± 1.2%)
-- **Feature ablation**: Each feature contributes positively to final performance
+### Feature Engineering Insights
+The 20-day optimal window discovery has broader implications for esports analytics. This timeframe balances several competing factors:
+- **Recency**: Captures current form without including stale data
+- **Stability**: Sufficient sample size for reliable averages
+- **Meta relevance**: Aligns with typical patch cycles and strategic adaptation periods
 
 ## Technical Implementation
 
-### Data Pipeline
+The implementation emphasizes reproducibility and temporal validity:
+
 ```python
-def create_prediction_features(df):
-    # 20-day rolling averages for team performance
-    df = add_rolling_averages(df, periods=[20])
-    
-    # Historical round differential patterns
-    df = calculate_round_dominance(df, window='20D')
-    
-    # Recent form within temporal constraints
-    df = compute_recent_momentum(df, n_games=5, max_days=30)
-    
-    # Head-to-head records with minimum threshold
-    df = generate_h2h_features(df, min_matches=2)
-    
+# Example: Temporal rolling average with data leakage prevention
+def calculate_rolling_features(df, window_days=20):
+    df_sorted = df.sort_values(['team_id', 'date'])
+    for team in df['team_id'].unique():
+        team_data = df_sorted[df_sorted['team_id'] == team]
+        rolling_avg = team_data['rating'].rolling(f'{window_days}D').mean().shift(1)
+        df.loc[df['team_id'] == team, 'rolling_rating'] = rolling_avg
     return df
 ```
 
-### Model Training and Evaluation
-```python
-# Temporal validation split
-split_date = df['date'].quantile(0.8)
-train_data = df[df['date'] < split_date]
-test_data = df[df['date'] >= split_date]
+The pipeline handles missing values through principled exclusion rather than imputation, maintaining data integrity at the cost of sample size.
 
-# Feature matrix and target vector
-X_train = train_data[['R2_advantage', 'rolling_round_diff', 
-                     'recent_form', 'h2h_advantage']]
-y_train = (train_data['result'] == 'W').astype(int)
-
-# Model training with cross-validation
-model = LogisticRegression(random_state=42)
-model.fit(X_train, y_train)
-```
-
-## Academic and Industry Implications
+## Academic and Practical Implications
 
 ### Research Contributions
-1. **Sports Analytics**: Demonstrates temporal optimization principles for performance prediction
-2. **Machine Learning**: Provides empirical evidence of feature synergy in competitive domains
-3. **Esports Studies**: Offers quantitative framework for analyzing competitive scene maturation
+This work contributes to several research domains:
+- **Sports Analytics**: Demonstrates temporal optimization principles for performance prediction
+- **Esports Studies**: Provides quantitative evidence for competitive scene evolution
+- **Machine Learning**: Documents feature synergy effects in temporal prediction tasks
 
 ### Practical Applications
-- **Tournament Prediction**: Provides probabilistic match outcome forecasting
-- **Team Analysis**: Identifies performance patterns and competitive advantages
-- **Strategic Planning**: Informs preparation focus based on historical matchup data
+The methodology has direct applications in tournament prediction, team performance analysis, and strategic planning. The 60.5% accuracy level provides actionable insights while acknowledging the inherent uncertainty in competitive outcomes.
 
-### Future Research Directions
-1. **Cross-Game Validation**: Test temporal optimization findings on other competitive titles
-2. **Advanced Feature Engineering**: Incorporate agent selection, map-specific performance, and in-game micro-patterns
-3. **Real-Time Prediction**: Develop live updating models for tournament broadcasts
-4. **Causal Analysis**: Investigate causal relationships between feature improvements and win probability changes
+### Future Directions
+Several extensions could strengthen this work:
+- **Cross-game validation**: Testing temporal optimization findings on other competitive titles
+- **Advanced feature engineering**: Incorporating map-specific performance, agent selection patterns, and micro-game statistics
+- **Causal inference**: Moving beyond correlation to understand causal relationships between features and outcomes
 
-## Reproducibility and Technical Details
+## Limitations and Considerations
 
-### Requirements
-- Python 3.8+
-- scikit-learn 1.3.0
-- pandas 1.5.0
-- numpy 1.24.0
-- matplotlib 3.7.0
+The analysis focuses exclusively on tier-1 professional play, potentially limiting generalizability to other competitive levels. The model also doesn't capture certain potentially important factors like roster changes, coaching impacts, or tournament-specific pressure effects.
 
-### Data Availability
-Dataset includes publicly available professional match results from VCT tournaments. Player ratings derived from publicly accessible performance statistics.
-
-### Code Structure
-```
-src/
-├── data_preprocessing.py    # Data cleaning and validation
-├── feature_engineering.py   # Rolling averages and H2H calculation  
-├── model_training.py        # Logistic regression implementation
-├── validation_suite.py      # Comprehensive model testing
-└── analysis_utilities.py    # Statistical analysis functions
-```
+Feature selection prioritizes interpretability over maximum predictive power - more complex ensemble methods might achieve higher accuracy at the cost of explainability.
 
 ## Conclusion
 
-This project demonstrates that professional esports matches can be predicted with meaningful accuracy (60.5%) through careful feature engineering and temporal modeling. The discovery of optimal 20-day prediction windows and evidence of increasing competitive predictability provide valuable insights for both academic research and practical applications in esports analytics.
+This project demonstrates that competitive esports outcomes can be predicted with meaningful accuracy through careful feature engineering and temporal modeling. The discovery of optimal prediction windows and evidence for competitive scene maturation provide valuable insights for both academic research and practical applications.
 
-The model's success stems from capturing multiple dimensions of team performance—fundamental skill, tactical dominance patterns, psychological momentum, and historical matchup advantages—while maintaining methodological rigor through proper temporal validation and comprehensive testing.
-
-These findings contribute to the growing field of sports analytics while establishing a framework for quantitative analysis of competitive gaming that could extend to other esports titles and traditional sports applications.
+The methodology successfully balances predictive performance with interpretability, creating a framework that could extend to other competitive gaming domains while maintaining scientific rigor.
