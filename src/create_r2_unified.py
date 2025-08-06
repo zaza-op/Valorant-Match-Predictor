@@ -1,5 +1,10 @@
 # src/create_r2_unified.py
 
+### USED TO CREATE A UNIFIED R2 DATASET WITH SPECIFIED FIELDS ###
+#R2 stands for the Rating 2.0 score VLR.gg calculates and uses for players, similar to KDA, but more complex.
+#some matches excluded an R2 score, so this dataset is filtered to only include matches with R2 data.
+
+
 import pandas as pd
 from pathlib import Path
 import argparse
@@ -82,7 +87,7 @@ def create_r2_unified_dataset(base: Path):
         how="left"
     )
     
-    # Ensure we have all the required columns in the right order
+    # Ensuring all columns are in the correct order
     required_columns = [
         'team_id', 'team_name', 'match_number_x', 'date', 'result', 'score', 
         'opponent', 'tournament', 'match_url', 'match_number_y', 'maps_played', 
@@ -90,7 +95,7 @@ def create_r2_unified_dataset(base: Path):
         'maps_lost', 'all_players', 'all_player_teams', 'all_player_ratings'
     ]
     
-    # Check for missing columns
+    # Checking for missing columns
     missing_columns = [col for col in required_columns if col not in df_unified.columns]
     if missing_columns:
         logger.warning(f"Missing columns: {missing_columns}")
@@ -106,7 +111,7 @@ def create_r2_unified_dataset(base: Path):
     df_unified.to_csv(output_path, index=False)
     
     # Print summary
-    print(f"\n✅ Created R2 unified dataset: {output_path}")
+    print(f"\n Created R2 unified dataset: {output_path}")
     print(f"Total rows: {len(df_unified)}")
     print(f"Unique matches: {df_unified['match_url'].nunique()}")
     print(f"Teams: {df_unified['team_name'].nunique()}")
@@ -140,8 +145,13 @@ def analyze_data_quality(df_unified: pd.DataFrame, df_players: pd.DataFrame):
     for count, num_matches in count_distribution.items():
         print(f"  {count} players: {num_matches} matches")
     
+    ### NOTE: During data collection, some matches gathered double the players
+    ### due to the same match being scraped twice under different team names.
+    ### This is expected and should be filtered out during modeling.
+
     # Find matches with incorrect player counts (not 10 or 20)
     # 10 = one team perspective, 20 = both team perspectives
+
     incorrect_counts = player_counts[(player_counts['player_count'] != 10) & (player_counts['player_count'] != 20)].sort_values('player_count')
     
     if len(incorrect_counts) > 0:

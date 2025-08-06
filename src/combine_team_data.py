@@ -1,5 +1,7 @@
 # src/save_r2_with_duplicates.py
 
+### USED TO COMBINE THREE SEPARATE CSV FILES PER TEAM INTO ONE BIG CSV FILE EACH ###
+
 import pandas as pd
 from pathlib import Path
 import argparse
@@ -89,7 +91,7 @@ def main():
     combined_players.to_csv(output_dir / "R2_all_players.csv", index=False)
     
     # Print summary
-    print(f"\n✅ Saved R2 data to {output_dir}")
+    print(f"\n Saved R2 data to {output_dir}")
     print(f"Matches: {len(filtered_matches)} rows")
     print(f"Maps: {len(filtered_maps)} rows")
     print(f"Players: {len(combined_players)} rows")

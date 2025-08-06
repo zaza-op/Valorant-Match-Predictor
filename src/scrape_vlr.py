@@ -987,18 +987,18 @@ if __name__ == "__main__":
             if not matches_df.empty:
                 matches_file = f'{matches_dir}/{team_name.upper()}_matches.csv'
                 matches_df.to_csv(matches_file, index=False)
-                print(f"✅ Saved {len(matches_df)} matches to {matches_file}")
+                print(f"Saved {len(matches_df)} matches to {matches_file}")
             
             if not players_df.empty:
                 players_file = f'{players_dir}/{team_name.upper()}_players.csv'
                 players_df.to_csv(players_file, index=False)
-                print(f"✅ Saved {len(players_df)} player records to {players_file}")
+                print(f"Saved {len(players_df)} player records to {players_file}")
             
             if not maps_df.empty:
                 maps_file = f'{maps_dir}/{team_name.upper()}_maps.csv'
                 maps_df.to_csv(maps_file, index=False)
-                print(f"✅ Saved {len(maps_df)} map records to {maps_file}")
-            
+                print(f"Saved {len(maps_df)} map records to {maps_file}")
+
             successful_teams += 1
             
             # Brief delay between teams
@@ -1008,7 +1008,7 @@ if __name__ == "__main__":
                 time.sleep(delay)
                 
         except Exception as e:
-            print(f"❌ FAILED to scrape {team_name}: {str(e)}")
+            print(f"FAILED to scrape {team_name}: {str(e)}")
             failed_teams.append((team_name, str(e)))
             continue
     
@@ -1016,8 +1016,8 @@ if __name__ == "__main__":
     print(f"\n{'='*60}")
     print("SCRAPING COMPLETE!")
     print(f"{'='*60}")
-    print(f"✅ Successfully scraped: {successful_teams}/{len(vct_teams)} teams")
-    print(f"❌ Failed: {len(failed_teams)} teams")
+    print(f"Successfully scraped: {successful_teams}/{len(vct_teams)} teams")
+    print(f"Failed: {len(failed_teams)} teams")
     
     if failed_teams:
         print("\nFailed teams:")
