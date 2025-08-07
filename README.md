@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # ML Project: Valorant Match Prediction
 
 ## TL;DR
@@ -45,5 +44,3 @@ See [PROJECT_REPORT.md](PROJECT_REPORT.md) for complete methodology, results, an
 
 ## Contact
 z.nimer@outlook.com - Seeking research opportunities in data analytics/ML
-=======
->>>>>>> 90d5c1d (Added project documentation, requirements, and performance graph)
