@@ -2,7 +2,7 @@
 
 ## Abstract
 
-Professional esports competitions represent a unique challenge for predictive modeling—teams exhibit inconsistent performance patterns, meta shifts disrupt established hierarchies, and individual player variance introduces substantial noise. Nevertheless, I developed a machine learning approach achieving 60.5% accuracy in predicting Valorant match outcomes across 1,300 professional matches (2021-2025). While this might seem modest, it represents an 8.5 percentage point improvement over random prediction. More intriguing, however, is what the model revealed about competitive gaming evolution: mature esports scenes demonstrate increasing predictability over time, suggesting stabilization of competitive dynamics. 
+Professional esports competitions represent a unique challenge for predictive modeling—teams exhibit inconsistent performance patterns, meta shifts disrupt established hierarchies, and individual player variance introduces substantial noise. Nevertheless, I developed a machine learning approach achieving 60.5% accuracy in predicting Valorant match outcomes across ~1,300 professional matches (2021-2025). While this might seem modest, it represents an 10.5 percentage point improvement over random prediction. More intriguing, however, is what the model revealed about competitive gaming evolution: mature esports scenes demonstrate increasing predictability over time, suggesting stabilization of competitive dynamics. 
 Through systematic feature engineering, specifically the identification of a 20-day optimal performance window, I uncovered patterns in how team skill differentials, historical dominance, momentum effects, and head-to-head records not only combine but also compound in order to give us a better prediction of match results.
 
 ## 1. Introduction and Motivation
@@ -11,7 +11,7 @@ The intersection of machine learning and esports analytics presents both tremend
 
 This project addresses a straightforward question: Is it possible to predict professional Valorant match outcomes with meaningful accuracy?
 
-The project consisted of analyzing 1,300 professional Valorant matches from major VCT (Valorant Champions Tour) events spanning November 2021 to July 2025. The resulting model achieves 60.5% test accuracy, which, while not revolutionary, proves sufficient for practical applications. Perhaps more importantly, the modeling process uncovered several phenomena: (1) a consistent 20-day window for optimal performance assessment, (2) evidence that competitive scenes become more predictable as they mature, (3) synergistic effects between predictive features that amplify accuracy when aligned, and (4) a minimum threshold of two previous encounters for head-to-head data to become meaningful.
+The project consisted of analyzing about 1,300 professional Valorant matches from major VCT (Valorant Champions Tour) events spanning November 2021 to July 2025. The resulting model achieves 60.5% test accuracy, which, while not revolutionary, proves sufficient for practical applications. Perhaps more importantly, the modeling process uncovered several phenomena: (1) a consistent 20-day window for optimal performance assessment, (2) evidence that competitive scenes become more predictable as they mature, (3) synergistic effects between predictive features that amplify accuracy when aligned, and (4) a minimum threshold of two previous encounters for head-to-head data to become meaningful.
 
 ## 2. Related Work and Context
 
@@ -31,9 +31,7 @@ The dataset encompasses ~1,300 professional matches from tier-1 VCT tournaments.
 - Match dates and tournament contexts  
 - Team rosters and opponent information
 
-Initial data collection yielded close to 2,000 matches, but many were removed due to incomplete information or data anomalies (e.g., forfeits recorded as 13-0 victories, lack of R2 score available, missing player data).
-
-Since Riot Games was not kind enough to provide their API for research, data collection was done using a custom web scraper utilizing Selenium and a painful amount of regular expressions (see src/scrape_vlr). 
+Initial data collection yielded over 1,600 matches, but many were removed due to incomplete information or data anomalies (e.g., forfeits recorded as 13-0 victories, lack of R2 score available, missing player data).
 
 ### 3.2 Data Quality Challenges
 
@@ -41,7 +39,11 @@ Several issues complicated data preparation. Team names weren't standardized acr
 
 Due to the top 43 VLR teams regularly matching up against each other, there were many duplicate scrapes that had to be cleaned, such as a player counter of 20 for a single match when the maximum is typically 10.
 
-Player substitutions posed another challenge. When teams used stand-ins, R2 ratings could vary dramatically from typical performance. I chose to retain these matches rather than exclude them, reasoning that substitutions are part of the competitive reality that models should account for.
+The web scraping itself took the majority of my time, Since Riot Games was not kind enough to provide their API for research, data collection was done using a custom web scraper utilizing Selenium and a painful amount of regular expressions (see src/scrape_vlr). Pages were initally stripped to raw text, then cleaned of any noise such as the comment section, forums section. I then highlighted useful sections due to the inconsistent structure. (text based parsing, in this situation, was mandatory)
+
+Worst case scenario, I implemented plenty of fallback strategies in case a certain match page structure for some reason differed than the norm, but the overwhelming majority of data was luckily in the same structure.
+
+Player substitutions posed another challenge. For one, The parsing logic player data collection had to be altered, since for a stand-in, the total players for a match increase from 10 to 11, or however many stand-ins were utilized. Furthermore, hhen teams used stand-ins, R2 ratings could vary dramatically from typical performance. I chose to retain these matches rather than exclude them, reasoning that substitutions are part of the competitive reality that models should account for.
 
 ## 4. Feature Engineering Approach
 
@@ -98,6 +100,8 @@ The model achieved 60.5% accuracy on the held-out test set (261 matches from Apr
 1. The Valorant Competitive has become more predictable over time, considering the test data is the most recent data.
 2. The test data set did not have enough data points in order to output a reliable result 
 
+See section 6.2
+
 Individual feature performance:
 - Team skill advantage alone: 55.2% accuracy
 - Historical dominance: 56.7%  
@@ -116,7 +120,7 @@ Analyzing accuracy by year reveals a clear trend:
 - 2024: 58.1% accuracy
 - 2025 (partial): 60.5% accuracy
 
-This increasing predictability likely reflects competitive maturation. Early in a game's lifespan, strategies are unrefined, the meta shifts rapidly, and upset potential is high. As scenes mature, hierarchies stabilize, optimal strategies crystallize, and favorites more consistently defeat underdogs.
+This increasing predictability likely reflects competitive maturation rather than model inaccuracy. Early in a game's lifespan, strategies are unrefined, the meta shifts rapidly, and upset potential is high. As scenes mature, hierarchies stabilize, optimal strategies crystallize, and favorites more consistently defeat underdogs. 
 
 ### 6.3 Feature Importance Analysis
 
