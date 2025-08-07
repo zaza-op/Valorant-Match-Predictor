@@ -2,7 +2,8 @@
 
 ** 60.5% accuracy predicting pro Valorant matches | Found evidence that esports become more predictable as they mature**
 
-## Read the full research paper here!: [PROJECT_REPORT.md](PROJECT_REPORT.md)
+## Read the full research paper here! 
+## [PROJECT_REPORT.md](PROJECT_REPORT.md)
 *Detailed methodology, findings, and analysis inside*
 
 Built a machine learning model to predict professional Valorant match outcomes:
