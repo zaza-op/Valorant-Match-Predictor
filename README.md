@@ -1,6 +1,10 @@
 # ML Project: Valorant Match Prediction
 
-## TL;DR
+** 60.5% accuracy predicting pro Valorant matches | Found evidence that esports become more predictable as they mature**
+
+##READ THE FULL RESEARCH PAPER HERE →](PROJECT_REPORT.md)
+*Detailed methodology, findings, and analysis inside*
+
 Built a machine learning model to predict professional Valorant match outcomes:
 - **Dataset**: ~1,300 professional matches (2021-2025) scraped from VLR.gg
 - **Accuracy**: 60.5% (vs 50.2% random baseline)
@@ -38,9 +42,6 @@ git clone https://github.com/zaza-op/valorant-match-predictor
 cd valorant-match-predictor
 pip install -r requirements.txt
 ```
-
-## Full Analysis
-See [PROJECT_REPORT.md](PROJECT_REPORT.md) for complete methodology, results, and findings.
 
 ## Contact
 z.nimer@outlook.com - Seeking research opportunities in data analytics/ML
