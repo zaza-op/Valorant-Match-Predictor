@@ -1,11 +1,8 @@
 # 🎯 ML Pipeline: Valorant Match Outcome Prediction
 
-**Author**: Zaid Nimer
+*By Zaid Nimer · z.nimer@outlook.com*
 
-**Contact**: z.nimer@outlook.com
-
-
-
+---
 
 This project predicts **professional VALORANT match outcomes** using **feature-engineered logistic regression** on data from the top 43 Americas VCT teams from Feb 2023 – Jul 2025 (1,546 matches).  
 I focused on **interpretable features**, **time-based validation**, and **calibration** — ensuring model accuracy and confidence. 
@@ -33,13 +30,19 @@ Why logistic regression? I wanted to stray away from black box models, and gain 
 - **Statistical significance:** p < 0.000001
 
 ---
+## ▶️ Run Here!
+Devloped interactible web-app to test on specific matches within test data set, as well as customize test/train split & dataset dates.
 
 ## 💻 Installation
+
+If you're interested with playing around with the model or testing out new features:
+
 ```bash
 git clone https://github.com/zaza-op/valorant-match-predictor
 cd valorant-match-predictor
 pip install -r requirements.txt
 ```
+
 ---
 
 ## ⚙️ Technical Details
@@ -90,7 +93,7 @@ More Feature details can be found in *notebooks/00_data_inspect.ipynb*
 ## ✅ Model Validation
 
 <details>
-<summary><b>📊 Ablation Results and Temporal Cross Validation</b> (click to expand)</summary>  
+<summary><h3>📊 Ablation Results & Temporal Cross-Validation (click to expand)</h3></summary> 
 
 ### Feature Ablation Analysis
 **Leave-One-Out Impact on Test Performance:**
