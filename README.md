@@ -5,7 +5,7 @@
 ---
 
 ## [▶️ Run Here!](https://valorant-match-predictor.streamlit.app/)
-(includes customizable time splits & dates for dataset, pick two teams and gives the model prediction for each match)
+*(includes customizable time splits & dates for dataset, pick two teams and gives the model prediction for each match)*
 
 ---
 
