@@ -4,7 +4,8 @@
 
 **Contact**: z.nimer@outlook.com
 
-**Date**: August 2025
+
+
 
 This project predicts **professional VALORANT match outcomes** using **feature-engineered logistic regression** on data from the top 43 Americas VCT teams from Feb 2023 – Jul 2025 (1,546 matches).  
 I focused on **interpretable features**, **time-based validation**, and **calibration** — ensuring model accuracy and confidence. 
