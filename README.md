@@ -4,10 +4,15 @@
 
 ---
 
-This project predicts **professional VALORANT match outcomes** using **feature-engineered logistic regression** on data from the top 43 Americas VCT teams from Feb 2023 – Jul 2025 (1,546 matches).  
-I focused on **interpretable features**, **time-based validation**, and **calibration** — ensuring model accuracy and confidence. 
+## [▶️ Run Here!](https://valorant-match-predictor.streamlit.app/)
+(includes customizable time splits & dates for dataset, pick two teams and gives the model prediction for each match)
 
-Why logistic regression? I wanted to stray away from black box models, and gain more insight on feature weight; what exactly contributes the most towards match wins?
+---
+
+This project predicts **professional VALORANT match outcomes** using **regularized logistic regression** *(see Future Work for planned ensemble baselines)* on data from the **top 43 Americas VCT teams** from Feb 2023 – Jul 2025 (1,546 matches).  
+Focus: **interpretable features**, **time-based validation**, and **calibration** — ensuring model accuracy and confidence. 
+
+Why logistic regression? It’s interpretable—I wanted to avoid black-box models and inspect feature weights to see which features contribute most to wins. I’ll benchmark additional models next.
 
 ---
 
@@ -17,7 +22,11 @@ Why logistic regression? I wanted to stray away from black box models, and gain 
 
 **Professional VALORANT** features the world's best teams competing in international tournaments with millions in prize pools. Matches are played on different maps, each with unique layouts and strategies. Teams build reputations for excellence on specific maps (their "map pool"), and individual players are rated on their performance metrics like kills, deaths, and round impact. Professional match data can be primarily found on [VLR.gg](https://www.vlr.gg)
 
-**Why predict match outcomes?** Unlike traditional sports, esports generates vast amounts of granular data. Every round, every player action, and every strategic decision is tracked, making it an ideal domain for machine learning applications while remaining challenging due to the complex team dynamics and evolving meta-game strategies. Professional E-sports prediction models can struggle to reach 60% accuracy consistently. 
+**Why predict match outcomes?** Unlike traditional sports, esports generates vast amounts of granular data. Every round, every player action, and every strategic decision is tracked, making it an ideal domain for machine learning applications while remaining challenging due to the complex team dynamics and evolving meta-game strategies. 
+
+*Prior work on pre-match esports prediction typically lands near the low-60s—for example, CS:GO models around 60% and LoL pre-game-only models around ~62%—with higher accuracy requiring in-game signals. 
+[CS:GO Model](https://lup.lub.lu.se/luur/download?func=downloadFile&recordOId=9145457&fileOId=9145459)
+[LOL Model](https://www.mdpi.com/2076-3417/15/10/5241)*
 
 ---
 
@@ -30,12 +39,10 @@ Why logistic regression? I wanted to stray away from black box models, and gain 
 - **Statistical significance:** p < 0.000001
 
 ---
-## ▶️ Run Here!
-Devloped interactible web-app to test on specific matches within test data set, as well as customize test/train split & dataset dates.
 
 ## 💻 Installation
 
-If you're interested with playing around with the model or testing out new features:
+If you're interested in playing around with the model or testing out new features:
 
 ```bash
 git clone https://github.com/zaza-op/valorant-match-predictor
@@ -55,7 +62,7 @@ pip install -r requirements.txt
 
 ## 🧩 Features
 
-1. `map_pool_advantage` - Measures how well a team's historical map pool winrate aligns against the opponent's historical map pool winrate. (Looks back 180 days, weighted with exponential decay)
+1. `map_pool_advantage` - Measures how well a team's historical map pool winrate aligns against the opponent's historical map pool win rate. (Looks back 180 days, weighted with exponential decay)
 2. `r2_advantage` - Each player per match is given an R2 rating from VLR.gg (player performance metric), this takes the rolling monthly mean R2 rating of each team. *(see more on R2 rating [here](https://www.vlr.gg/381456/vlr-rating-2-0-update))*
 3. `winrate_advantage`- Difference in recent match win rates between teams.
 4. `recent_form` - Captures short term momentum specific to team performance (weighted with exponential decay)
@@ -64,9 +71,9 @@ pip install -r requirements.txt
 
 Features were chosen based on feature combination script written, *(see notebooks/features2.ipynb)*. The script returns the top 5 feature combinations given all features passed in.
 
-Utilized the .shift(1) operation to not take into account the current match while training/testing, preventing data leakage.
+Used .shift(1) so features only use information **before** the current match while training/testing, preventing data leakage.
 
-More Feature details can be found in *notebooks/00_data_inspect.ipynb*
+More feature details can be found in *notebooks/00_data_inspect.ipynb*
 
 ---
 
@@ -77,8 +84,8 @@ More Feature details can be found in *notebooks/00_data_inspect.ipynb*
 ---
 
 ## 🛠 Data Collection
-- **Method:** Custom Selenium-based scraper built specifically for VLR.gg (see src/scrape_vlr)
-- **Why:** No official/accessible Riot API for Valorant match data, and VLR.gg is React based with dynamic content, making static parsing with BeautifulSoup scraping unavailable.
+- **Method:** Custom Selenium-based scraper built specifically for VLR.gg (see src/scrape_vlr.py)
+- **Why:** No official/accessible Riot API for Valorant match data, and VLR.gg is React-based with dynamic content, making static parsing with BeautifulSoup scraping insufficient.
 - **Process:**  
   - Extracted and parsed raw page text from dynamically rendered content  
   - Utilized regex extensively to capture and structure key data fields  
@@ -164,8 +171,8 @@ More Feature details can be found in *notebooks/00_data_inspect.ipynb*
 | 2025-02-12 | 514 | 97.1% |
 
 **Key Insights:**
-- Since `map_pool_advantage` is the most predictive factor, and includes a 180 day callback, accuracy is lower in earlier chunks (lack of past map data) compared to later chunks, explaining increased predictive power in later data-set as well as test set.
-- Through feature engineering and experimentation, 180 day callback was found to have the most predictive power out of timeframes tested
+- Since `map_pool_advantage` is the most predictive factor, and includes a 180-day lookback, accuracy is lower in earlier chunks (lack of past map data) compared to later chunks, explaining increased predictive power in later dataset as well as test set.
+- Through feature engineering and experimentation, 180-day lookback was found to have the most predictive power out of timeframes tested
 
 ### ⚖️ Calibration 
 ![Calibration Curve](images/calibration_curve.png)  
@@ -188,7 +195,7 @@ More Feature details can be found in *notebooks/00_data_inspect.ipynb*
 
 ## 📁 Project Structure
 ```
-├── app/               # interactable web app code
+├── app/               # interactive web app code
 ├── images/            # all images
 ├── data/              # Raw and processed match data
 ├── notebooks/         # Data exploration & refining, feature engineering & visualization
@@ -200,12 +207,12 @@ More Feature details can be found in *notebooks/00_data_inspect.ipynb*
 ---
 
 ## 🚀 Future Work
-- User-facing match predictor given two teams
+- User-facing match prediction given live data. (currently static)
 - (Attempt) to Gain Public API access for live predictions
 - Expand feature set
 - Working on decreasing test + train gap for stability & better calibration
-- Test tree-based ensemble methods that can capture non-linear feature interactions and typically perform better in E-sports. (random forest/xgboost/gradient boosting).
-- Add stratification post split for better class balance.
+- Test tree-based ensemble methods that can capture non-linear feature interactions and typically perform better in esports. (random forest/xgboost/gradient boosting).
+- Add stratification post-split for better class balance.
 - Add features for tournament tier/context (stakes matter for performance)
 - Dataset expansion for increased model quality
 
