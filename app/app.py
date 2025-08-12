@@ -69,7 +69,7 @@ st.markdown("""
 st.title("VALORANT Match Predictor")
 st.caption("Logistic regression over interpretable features (map pool, R2, recent form, etc.).")
 
-DATA_PATH = "processed_valorant_dataset.csv"
+DATA_PATH = "main/app/processed_valorant_dataset.csv"
 MASTER_PATH = "all_predictions.csv"
 
 # Loading base data
