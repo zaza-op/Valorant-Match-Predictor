@@ -9,7 +9,7 @@ from model_utils import (
 
 st.set_page_config(page_title="VALORANT Match Predictor", layout="wide")
 
-# --- CSS (dark-purple KPI cards with white text) ---
+# CSS
 st.markdown("""
 <style>
 .block-container { font-size: 1.02rem; }
@@ -72,7 +72,7 @@ st.caption("Logistic regression over interpretable features (map pool, R2, recen
 DATA_PATH = "processed_valorant_dataset.csv"
 MASTER_PATH = "all_predictions.csv"
 
-# --- Load base data ---
+# Loading base data
 if not os.path.exists(DATA_PATH):
     st.error(f"Couldn't find `{DATA_PATH}` in the current folder. Drop your CSV next to `app.py` and rerun.")
     st.stop()
@@ -103,7 +103,7 @@ def _compute_master(df_raw: pd.DataFrame, start_date_str: str, train_prop: float
     P = prepare(df_raw, start_date=start_date_str, train_prop=train_prop)
     model, metrics = train_model(P["Xtr"], P["ytr"], P["Xte"], P["yte"])
     preds_df = compute_predictions_df(P, model, metrics)
-    # Persist master CSV (so the UI 'pulls from it')
+    # make master CSV so the UI can pull from it
     fname, csv_bytes = save_dataframe_csv(preds_df, filename=MASTER_PATH)
     with open(fname, "wb") as f:
         f.write(csv_bytes)
@@ -120,7 +120,7 @@ with st.sidebar:
     st.write(f"- Train proportion: **{train_prop:.2f}** (Test: **{1-train_prop:.2f}**)")
     st.write(f"- Rows (train / test): **{(preds_df['split']=='train').sum()} / {(preds_df['split']=='test').sum()}**")
 
-# --- Main interactive panel ---
+# Interactive panel
 st.header("Match Explorer")
 
 # Team selector (unified list)
@@ -220,7 +220,7 @@ if pd.notna(match_url) and isinstance(match_url, str) and match_url.strip():
     st.markdown("#### Actual game here")
     st.markdown(f"[Open match link]({match_url})")
 
-# --- Feature values section (horizontal row) ---
+# Feature values section (horizontal row)
 st.markdown('<div class="section-title">Feature values for this match</div>', unsafe_allow_html=True)
 present_feats = [f for f in FEATURES if f in row.index]
 table_cols = present_feats + ["team_name", "opponent", "date", "result"]
