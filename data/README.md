@@ -7,9 +7,9 @@ Professional Valorant competitive match data spanning November 2021 to July 2025
 - VLR.gg Website
 
 ## Dataset Characteristics
-- **Total Matches**: 1298, (after cleaning)
+- **Total Matches**: 1,546, (after cleaning)
 - **Teams Covered**: 43 tier-1 organizations
-- **Time Period**: 2021-11-04 to 2025-07-13
+- **Time Period**: 2023-02 to 2025-07
 
 ## Data Schema
 
@@ -54,7 +54,7 @@ Final Dataset: notebooks/processed_valorant_dataset.cs
 ## Data Quality
 - **Missing Values**: <2% across all features (handled via dropna)
 - **Temporal Coverage**: Even distribution across time periods
-- **Team Balance**: 50.2% overall win rate (well-balanced)
+- **Team Balance**: 51.3% overall win rate (well-balanced)
 - **Validation**: Comprehensive data integrity checks performed
 
 ## Preprocessing Steps

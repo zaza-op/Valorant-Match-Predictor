@@ -1,8 +1,6 @@
-# src/create_r2_unified.py
 
 ### USED TO CREATE A UNIFIED R2 DATASET WITH SPECIFIED FIELDS ###
-#R2 stands for the Rating 2.0 score VLR.gg calculates and uses for players, similar to KDA, but more complex.
-#some matches excluded an R2 score, so this dataset is filtered to only include matches with R2 data.
+# (combines all of raw / R2_all_maps, matches and players into giant CSV)
 
 
 import pandas as pd
