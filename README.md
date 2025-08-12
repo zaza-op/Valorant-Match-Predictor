@@ -4,19 +4,26 @@
 
 ---
 
-## [▶️ Run Here!](https://valorant-match-predictor.streamlit.app/)
-*(includes customizable time splits & dates for dataset, pick two teams and gives the model prediction for each match)*
+### [▶️ Run Here!](https://valorant-match-predictor.streamlit.app/)
 
----
+<details>
+<summary><b>How to use</b></summary>
 
-This project predicts **professional VALORANT match outcomes** using **regularized logistic regression** *(see Future Work for planned ensemble baselines)* on data from the **top 43 Americas VCT teams** from Feb 2023 – Jul 2025 (1,546 matches).  
-Focus: **interpretable features**, **time-based validation**, and **calibration** — ensuring model accuracy and confidence. 
+- Pick **two teams** and a **date window**; get the model’s **win probability** and predicted winner.
+- **Adjust temporal split** to simulate “what was knowable then” (prevents leakage).
+- See a **calibrated confidence** score.
+
+</details>
+
+**Description**: This project predicts **professional VALORANT match outcomes** using **regularized logistic regression** *(see Future Work for planned ensemble baselines)* on data from the **top 43 Americas VCT teams** from Feb 2023 – Jul 2025 (1,546 matches).  
+
+**Focus**: **interpretable features**, **time-based validation**, and **calibration** — ensuring model accuracy and confidence. 
 
 Why logistic regression? It’s interpretable—I wanted to avoid black-box models and inspect feature weights to see which features contribute most to wins. I’ll benchmark additional models next.
 
----
+<details>
+<summary><h3>🎮 VALORANT & Context </h3></summary>
 
-## 🎮 What is VALORANT?
 
 **VALORANT** is a competitive 5v5 tactical first-person shooter (FPS) developed by Riot Games, containing a variety of maps, agents, and strategies.
 
@@ -27,16 +34,27 @@ Why logistic regression? It’s interpretable—I wanted to avoid black-box mode
 *Prior work on pre-match esports prediction typically lands near the low-60s—for example, CS:GO models around 60% and LoL pre-game-only models around ~62%—with higher accuracy requiring in-game signals. 
 [CS:GO Model](https://lup.lub.lu.se/luur/download?func=downloadFile&recordOId=9145457&fileOId=9145459)
 [LOL Model](https://www.mdpi.com/2076-3417/15/10/5241)*
+</details>
 
 ---
 
 ## 📊 Key Results
-- **Test Accuracy:** 65.0% (95% CI: [60.2%, 69.3%])
+(temporal split; test n=394)
+- **Test Accuracy:** **65.0%** (95% CI: [60.2%, 69.3%])
 - **Brier Score:** 0.2354  
 - **Log Loss:** 0.6633  
 - **ECE:** 0.0832 (well-calibrated)
 - **Baseline:** 51.3% → **+13.7 pp improvement**
-- **Statistical significance:** p < 0.000001
+- **Statistical significance:** binomial test vs majority (51.3%) **p < 1e-6**
+
+---
+
+## ⚙️ Technical Details
+- **Model:** L2-regularized Logistic Regression (C=10.0)
+- **Framework:** scikit-learn
+- **Preprocessing:** None (feature engineering produces normalized values)
+- **Train/Test Split:** 75/25 temporal split (cutoff: July 2025)
+- **Dependencies:** see [requirements.txt](requirements.txt)
 
 ---
 
@@ -52,17 +70,9 @@ pip install -r requirements.txt
 
 ---
 
-## ⚙️ Technical Details
-- **Model:** L2-regularized Logistic Regression (C=10.0)
-- **Preprocessing:** None (feature engineering produces normalized values)
-- **Train/Test Split:** 75/25 temporal split (cutoff: July 2025)
-- **Dependencies:** see [requirements.txt](requirements.txt)
-
----
-
 ## 🧩 Features
 
-1. `map_pool_advantage` - Measures how well a team's historical map pool winrate aligns against the opponent's historical map pool win rate. (Looks back 180 days, weighted with exponential decay)
+1. `map_pool_advantage` - Measures how well a team's historical map pool win rate aligns against the opponent's historical map pool win rate. (Looks back 180 days, weighted with exponential decay)
 2. `r2_advantage` - Each player per match is given an R2 rating from VLR.gg (player performance metric), this takes the rolling monthly mean R2 rating of each team. *(see more on R2 rating [here](https://www.vlr.gg/381456/vlr-rating-2-0-update))*
 3. `winrate_advantage`- Difference in recent match win rates between teams.
 4. `recent_form` - Captures short term momentum specific to team performance (weighted with exponential decay)
