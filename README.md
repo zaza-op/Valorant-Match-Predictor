@@ -218,7 +218,7 @@ More feature details can be found in *notebooks/00_data_inspect.ipynb*
 
 ## 🚀 Future Work
 - User-facing match prediction given live data. (currently static)
-- (Attempt) to Gain Public API access for live predictions
+- (Attempt) to gain public API access for live predictions
 - Expand feature set
 - Working on decreasing test + train gap for stability & better calibration
 - Test tree-based ensemble methods that can capture non-linear feature interactions and typically perform better in esports. (random forest/xgboost/gradient boosting).
