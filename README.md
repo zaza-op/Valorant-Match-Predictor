@@ -184,12 +184,13 @@ More Feature details can be found in *notebooks/00_data_inspect.ipynb*
 
 ## 📁 Project Structure
 ```
+├── app/               # interactable web app code
+├── images/            # all images
 ├── data/              # Raw and processed match data
 ├── notebooks/         # Data exploration & refining, feature engineering & visualization
-├── src/              # Web scraping & feature engineering code
-├── PROJECT_REPORT.md  # Full research paper with methodology
+├── src/              # Web scraping & feature engineering code 
 ├── README.md         # This file
-└── requirements.txt  # Python dependencies
+└── requirements.txt  # dependencies
 ```
 
 ---
