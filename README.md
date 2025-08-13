@@ -162,11 +162,15 @@ More feature details can be found in *notebooks/00_data_inspect.ipynb*
 ![Accuracy over time chunks](images/accuracy_over_time.png)
 
 **Chunk Analysis:**
-| Chunk | Baseline | Model | Δ |
-|-------|----------|-------|---|
-| 2023-02-23 to 2024-06-22    | 51.7%    | 54.3% | +2.6 pp |
-| 2024-06-22 to 2025-02-09     | 55.0%    | 60.5% | +5.5 pp |
-| 2025-02-09 to 2025-07-13    | 51.7%    | 62.0% | +10.3 pp |
+
+515 matches each, n = 129
+
+| Chunk   | Date Range                  | Baseline | Model | Δ      |
+|---------|-----------------------------|----------|-------|--------|
+| Chunk 1 | 2023-02-23 – 2024-06-22     | 51.7%    | 54.3% | +2.6 pp |
+| Chunk 2 | 2024-06-22 – 2025-02-09     | 55.0%    | 60.5% | +5.5 pp |
+| Chunk 3 | 2025-02-09 – 2025-07-13     | 51.7%    | 62.0% | +10.3 pp |
+
 
 
 ![Map history coverage over time](images/map_history_coverage.png)
