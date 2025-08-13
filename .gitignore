@@ -3,6 +3,8 @@
 **/*.py[cod]
 *$py.class
 
+.devcontainer/
+
 # Jupyter checkpoints
 .ipynb_checkpoints/
 untitled-checkpoint
@@ -14,7 +16,7 @@ untitled-checkpoint
 *.ipynb_checkpoints
 *.nb.html
 
-# IDE/editor folders (optional)
+# IDE/editor folders
 /.vscode/
 /.idea/
 
@@ -34,4 +36,3 @@ Thumbs.db
 build/
 dist/
 *.egg-info/
-.devcontainer/
