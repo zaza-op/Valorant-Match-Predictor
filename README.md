@@ -164,9 +164,9 @@ More feature details can be found in *notebooks/00_data_inspect.ipynb*
 **Chunk Analysis:**
 | Chunk | Baseline | Model | Δ |
 |-------|----------|-------|---|
-| 1     | 51.7%    | 54.3% | +2.6 pp |
-| 2     | 55.0%    | 60.5% | +5.5 pp |
-| 3     | 51.7%    | 62.0% | +10.3 pp |
+| 2023-02-23 to 2024-06-22    | 51.7%    | 54.3% | +2.6 pp |
+| 2024-06-22 to 2025-02-09     | 55.0%    | 60.5% | +5.5 pp |
+| 2025-02-09 to 2025-07-13    | 51.7%    | 62.0% | +10.3 pp |
 
 
 ![Map history coverage over time](images/map_history_coverage.png)
