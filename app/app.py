@@ -176,12 +176,58 @@ else:
     st.warning("Couldn't locate the selected match row. Check your dataset formatting.")
     st.stop()
 
-# Predictions/actuals
-proba = float(row["predicted_proba_win"])
-pred_label = "Win" if int(row["predicted_class"]) == 1 else "Loss"
+# FIXED BUG, NORMALIZED TEAM PERSPECTIVE ON APP
+team_is_row_team = (row["team_name"] == team)
+
+# Model outputs are from the row's team_name perspective
+proba_row = float(row["predicted_proba_win"])          # P(row.team_name wins)
+pred_row_label = "Win" if int(row["predicted_class"]) == 1 else "Loss"
+
+# Flip to selected team's perspective if needed
+if team_is_row_team:
+    proba = proba_row
+    pred_label = pred_row_label
+else:
+    proba = 1.0 - proba_row
+    pred_label = "Win" if pred_row_label == "Loss" else "Loss"
+
+# Actual result (row is from team_name perspective)
+actual_raw = str(row.get("result", "Unknown"))
+if isinstance(actual_raw, str):
+    if actual_raw.upper().startswith("W"):
+        actual_label_row = "Win"
+    elif actual_raw.upper().startswith("L"):
+        actual_label_row = "Loss"
+    else:
+        actual_label_row = actual_raw
+else:
+    actual_label_row = "Unknown"
+
+# Flip actual if selected team is the opponent in this row
+actual_label = (
+    actual_label_row if team_is_row_team
+    else ("Win" if actual_label_row == "Loss" else "Loss" if actual_label_row == "Win" else actual_label_row)
+)
+
 prob_pct = f"{proba*100:.1f}%"
 
+# SWAPPING IN DATASET JUST FOR CLARITY
+def swap_my_opp(col):
+    if col.endswith("_my"):
+        return col[:-3] + "_opp"
+    if col.endswith("_opp"):
+        return col[:-4] + "_my"
+    return col
+
+display_row = row.copy()
+if not team_is_row_team:
+    to_swap = [c for c in display_row.index if c.endswith("_my") or c.endswith("_opp")]
+    swapped_vals = {c: display_row[swap_my_opp(c)] for c in to_swap}
+    display_row[to_swap] = pd.Series(swapped_vals)
+
+# Display KPI cards
 col1, col2, col3 = st.columns(3)
+
 with col1:
     st.markdown(f"""
     <div class="kpi">
@@ -199,15 +245,8 @@ with col2:
     </div>
     """, unsafe_allow_html=True)
 
-actual_raw = str(row.get("result", "Unknown"))
-if isinstance(actual_raw, str) and actual_raw.upper().startswith("W"):
-    actual_label = "Win"
-elif isinstance(actual_raw, str) and actual_raw.upper().startswith("L"):
-    actual_label = "Loss"
-else:
-    actual_label = actual_raw
-
 with col3:
+    # USE THE ALREADY CORRECTLY CALCULATED actual_label
     st.markdown(f"""
     <div class="kpi">
       <div class="label">Actual result</div>
@@ -225,4 +264,4 @@ if pd.notna(match_url) and isinstance(match_url, str) and match_url.strip():
 st.markdown('<div class="section-title">Feature values for this match</div>', unsafe_allow_html=True)
 present_feats = [f for f in FEATURES if f in row.index]
 table_cols = present_feats + ["team_name", "opponent", "date", "result"]
-st.dataframe(row[table_cols].to_frame().T, use_container_width=True)
+st.dataframe(display_row[table_cols].to_frame().T, use_container_width=True)
