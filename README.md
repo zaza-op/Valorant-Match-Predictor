@@ -4,7 +4,8 @@
 
 ---
 
-### [▶️ Run Here!](https://valorant-match-predictor.streamlit.app/)
+### [▶️ Run Here!](https://valorant-match-predictor-o078.onrender.com/)
+
 
 <details>
 <summary><b>How to use</b></summary>
